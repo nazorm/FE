@@ -1,0 +1,935 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+* button:hover,
+* a:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+button {
+  background-color: teal;
+  color: white;
+  font-family: "Questrial", sans-serif;
+  font-size: 13px;
+  padding: 10px 15px;
+  text-align: center;
+}
+
+.uptoCard,
+.communityCard,
+.resourceCard {
+  text-align: start;
+}
+
+.uptoCard h5,
+.communityCard h5,
+.resourceCard h5 {
+  margin-top: 20px;
+}
+
+.uptoCard p,
+.communityCard p,
+.resourceCard p {
+  margin: 20px 0 30px;
+  padding: 0 40px 0 0;
+  font-family: "Questrial", sans-serif;
+  line-height: 1.5;
+}
+
+.carousel-track {
+  display: -ms-grid;
+  display: grid;
+  border: 1px solid black;
+  grid-gap: 47px;
+  width: 100%;
+  margin: 0 100px;
+}
+
+.carousel {
+  margin-top: 30px;
+  text-align: start;
+  width: 100%;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+}
+
+.carousel::-webkit-scrollbar {
+  background: transparent;
+}
+
+.carousel-identifier {
+  width: 100%;
+  margin: 30px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.carousel-identifier div {
+  margin-right: 2px;
+  width: 10px;
+  height: 10px;
+  border: 1px solid teal;
+  border-radius: 50%;
+}
+
+.carousel-identifier div:first-child {
+  background-color: teal;
+}
+
+.landing-header .blackHead {
+  background-color: black;
+  padding: 10px 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  float: right;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.landing-header .blackHead nav .language {
+  background-color: black;
+  border: black;
+  color: white;
+  font-family: "Questrial", sans-serif;
+}
+
+.landing-header .blackHead .blackheadSearch {
+  background-color: black;
+  font-family: "Questrial", sans-serif;
+  border: transparent;
+  color: white;
+  padding: 0;
+  width: 4%;
+  height: 20px;
+  margin: 0 0 0 20px;
+}
+
+.landing-header .blackHead .memberLogin {
+  width: 150px;
+  border: 10px solid white;
+  background-color: black;
+  border: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.landing-header .blackHead .memberLogin h5 {
+  font-family: "Questrial", sans-serif;
+  padding: 0px;
+  font-size: 13px;
+  font-weight: 200;
+  color: white;
+  margin: 0 10px 0 0;
+}
+
+.landing-header .landing-headerLogoArea {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: whitesmoke;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  margin: 0;
+  padding: 0 100px;
+}
+
+.landing-header .landing-headerLogoArea .landing-headerLogo {
+  width: 12rem;
+}
+
+.landing-header .landing-headerLogoArea button {
+  background: transparent;
+  border: transparent;
+  padding: 0;
+}
+
+.landing-header .landing-headerLogoArea .hamburger {
+  width: 2rem;
+}
+
+.landing-header .language:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.introSection .suitWoman {
+  width: 100%;
+  -webkit-filter: brightness(90%);
+          filter: brightness(90%);
+}
+
+.introSection .divOverlay {
+  position: absolute;
+  background-color: white;
+  top: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 50px;
+  border-radius: 5px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.introSection-card {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px;
+}
+
+.introSection-card img {
+  width: 100px;
+}
+
+.introSection-card .learn {
+  -webkit-box-flex: 25%;
+      -ms-flex: 25%;
+          flex: 25%;
+}
+
+.introSection-card p {
+  margin: 30px 0 0;
+  padding: 0 150px 0 0;
+}
+
+.beenUpTo {
+  text-align: center;
+}
+
+.beenUpTo h3 {
+  margin: 80px 0 50px;
+}
+
+.beenUpTo .carousel-track {
+  -ms-grid-columns: (290px)[8];
+      grid-template-columns: repeat(8, 290px);
+}
+
+.newsletter-subscriptionSection {
+  position: relative;
+}
+
+.newsletter-subscriptionSection .coffeeWoman {
+  -webkit-filter: brightness(80%);
+          filter: brightness(80%);
+  width: 100%;
+}
+
+.newsletter-subscriptionSection .newsletterOverlay {
+  padding: 0 100px 0 0;
+  text-align: start;
+  position: absolute;
+  top: 30%;
+  left: 55%;
+}
+
+.newsletter-subscriptionSection .newsletterOverlay h3 {
+  padding: 0 80px 0 0;
+  font-family: "Questrial", sans-serif;
+  font-size: 40px;
+  color: white;
+}
+
+.newsletter-subscriptionSection .newsletterOverlay div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 60px;
+}
+
+.newsletter-subscriptionSection .newsletterOverlay div .newsletterEmail {
+  font-family: "Questrial", sans-serif;
+  font-size: 13px;
+  color: white;
+  width: 100%;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-right: 30px;
+  padding: 10px 0;
+  border: transparent;
+  background-color: transparent;
+  border-bottom: 5px solid white;
+}
+
+.communitySection {
+  text-align: center;
+  padding: 0 80px 0 100px;
+}
+
+.communitySection h3 {
+  margin: 50px 0;
+}
+
+.communitySection .communities {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.whereWeWork .carousel-track {
+  -ms-grid-columns: (300px)[9];
+      grid-template-columns: repeat(9, 300px);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.whereWeWork .carousel-track img {
+  border: 1px solid black;
+  width: 30%;
+}
+
+.whereWeWork .carousel-track .horizontal {
+  width: 100%;
+}
+
+.whereWeWork .carousel-track .deloitte {
+  width: 60%;
+}
+
+.landingFooter {
+  background-color: black;
+}
+
+.landingFooter .about a {
+  color: white;
+  text-decoration: none;
+  font-family: "Questrial", sans-serif;
+}
+
+.landingFooter .about p {
+  color: white;
+  margin: 50px 0 20px;
+}
+
+.landingFooter .about li {
+  list-style: none;
+  line-height: 2;
+}
+
+.landingFooter .contact,
+.landingFooter .about {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 100px;
+}
+
+.landingFooter .icons {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.landingFooter .icons .icon {
+  margin: 0 10px;
+}
+
+.dropdown,
+.signupPage,
+.logInPage {
+  display: none;
+}
+
+.dropdown .dropdown-display,
+.dropdown .loginDisplay,
+.dropdown .signupDisplay,
+.signupPage .dropdown-display,
+.signupPage .loginDisplay,
+.signupPage .signupDisplay,
+.logInPage .dropdown-display,
+.logInPage .loginDisplay,
+.logInPage .signupDisplay {
+  padding-bottom: 19%;
+  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  background-color: white;
+  width: 100%;
+}
+
+.dropdown .dropdown-display .dropdrown-nav {
+  font-family: "Questrial", sans-serif;
+  -webkit-box-flex: 25%;
+      -ms-flex: 25%;
+          flex: 25%;
+  padding: 0 50px;
+}
+
+.dropdown .dropdown-display .dropdrown-nav .dropdown-item {
+  padding: 20px 0 0;
+  border-bottom: 0.1px solid grey;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.dropdown .dropdown-display .dropdrown-nav h3 {
+  color: grey;
+  font-weight: 100;
+}
+
+.dropdown .dropdown-display .dropdrown-nav .clear-btn {
+  float: right;
+  margin: 0 0 40px 0;
+}
+
+.dropdown .dropdown-display .dropdrown-nav button {
+  background: transparent;
+  border: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 15px;
+}
+
+.dropdown .dropdown-display .dropdrown-nav button h5 {
+  color: grey;
+  font-size: 15px;
+}
+
+.dropdown .dropdown-display .dropdrown-nav button .identityIcon-yellow {
+  margin-right: 20px;
+}
+
+.dropdown .dropdown-display .dropdowncard-container {
+  -webkit-box-flex: 75%;
+      -ms-flex: 75%;
+          flex: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 100px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.signupPage .loginDisplay,
+.signupPage .signupDisplay,
+.logInPage .loginDisplay,
+.logInPage .signupDisplay {
+  padding-bottom: 0;
+}
+
+.signupPage .loginDisplay .sign,
+.signupPage .signupDisplay .sign,
+.logInPage .loginDisplay .sign,
+.logInPage .signupDisplay .sign {
+  -webkit-box-flex: 20%;
+      -ms-flex: 20%;
+          flex: 20%;
+  padding: 20px 60px 0;
+}
+
+.signupPage .loginDisplay .sign .signHeader,
+.signupPage .signupDisplay .sign .signHeader,
+.logInPage .loginDisplay .sign .signHeader,
+.logInPage .signupDisplay .sign .signHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 25%;
+}
+
+.signupPage .loginDisplay .sign .signHeader-logo,
+.signupPage .signupDisplay .sign .signHeader-logo,
+.logInPage .loginDisplay .sign .signHeader-logo,
+.logInPage .signupDisplay .sign .signHeader-logo {
+  width: 8rem;
+}
+
+.signupPage .loginDisplay .sign .signHeader-language,
+.signupPage .signupDisplay .sign .signHeader-language,
+.logInPage .loginDisplay .sign .signHeader-language,
+.logInPage .signupDisplay .sign .signHeader-language {
+  font-size: 15px;
+}
+
+.signupPage .loginDisplay .sign .sign-identifier,
+.signupPage .signupDisplay .sign .sign-identifier,
+.logInPage .loginDisplay .sign .sign-identifier,
+.logInPage .signupDisplay .sign .sign-identifier {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 3%;
+}
+
+.signupPage .loginDisplay .sign p,
+.signupPage .signupDisplay .sign p,
+.logInPage .loginDisplay .sign p,
+.logInPage .signupDisplay .sign p {
+  line-height: 1.5;
+  font-family: "Questrial", sans-serif;
+  font-size: 12px;
+  color: grey;
+  margin-bottom: 5%;
+}
+
+.signupPage .loginDisplay .sign .signEmailContainer,
+.signupPage .signupDisplay .sign .signEmailContainer,
+.logInPage .loginDisplay .sign .signEmailContainer,
+.logInPage .signupDisplay .sign .signEmailContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.signupPage .loginDisplay .sign .signEmailContainer input,
+.signupPage .signupDisplay .sign .signEmailContainer input,
+.logInPage .loginDisplay .sign .signEmailContainer input,
+.logInPage .signupDisplay .sign .signEmailContainer input {
+  padding: 10px;
+  border: 1px solid whitesmoke;
+}
+
+.signupPage .loginDisplay .sign .signEmailContainer .signupPassword,
+.signupPage .loginDisplay .sign .signEmailContainer .signinPassword,
+.signupPage .signupDisplay .sign .signEmailContainer .signupPassword,
+.signupPage .signupDisplay .sign .signEmailContainer .signinPassword,
+.logInPage .loginDisplay .sign .signEmailContainer .signupPassword,
+.logInPage .loginDisplay .sign .signEmailContainer .signinPassword,
+.logInPage .signupDisplay .sign .signEmailContainer .signupPassword,
+.logInPage .signupDisplay .sign .signEmailContainer .signinPassword {
+  margin: 10px 0;
+}
+
+.signupPage .loginDisplay .sign .signEmailContainer .forgotpassword,
+.signupPage .signupDisplay .sign .signEmailContainer .forgotpassword,
+.logInPage .loginDisplay .sign .signEmailContainer .forgotpassword,
+.logInPage .signupDisplay .sign .signEmailContainer .forgotpassword {
+  text-align: end;
+}
+
+.signupPage .loginDisplay .sign h4,
+.signupPage .signupDisplay .sign h4,
+.logInPage .loginDisplay .sign h4,
+.logInPage .signupDisplay .sign h4 {
+  text-align: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin: 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.signupPage .loginDisplay .sign h4:before,
+.signupPage .loginDisplay .sign h4:after,
+.signupPage .signupDisplay .sign h4:before,
+.signupPage .signupDisplay .sign h4:after,
+.logInPage .loginDisplay .sign h4:before,
+.logInPage .loginDisplay .sign h4:after,
+.logInPage .signupDisplay .sign h4:before,
+.logInPage .signupDisplay .sign h4:after {
+  content: "";
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1;
+          flex: 1 1;
+  border-bottom: 0.1px solid grey;
+  margin: auto;
+}
+
+.signupPage .loginDisplay .sign .sign-icons,
+.signupPage .signupDisplay .sign .sign-icons,
+.logInPage .loginDisplay .sign .sign-icons,
+.logInPage .signupDisplay .sign .sign-icons {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.signupPage .loginDisplay .sign .sign-icons .icon,
+.signupPage .signupDisplay .sign .sign-icons .icon,
+.logInPage .loginDisplay .sign .sign-icons .icon,
+.logInPage .signupDisplay .sign .sign-icons .icon {
+  padding: 0 5px;
+}
+
+.signupPage .loginDisplay .sign .terms-c,
+.signupPage .signupDisplay .sign .terms-c,
+.logInPage .loginDisplay .sign .terms-c,
+.logInPage .signupDisplay .sign .terms-c {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.signupPage .loginDisplay .sign .terms-c a,
+.signupPage .signupDisplay .sign .terms-c a,
+.logInPage .loginDisplay .sign .terms-c a,
+.logInPage .signupDisplay .sign .terms-c a {
+  text-decoration: none;
+  color: #e1ad01;
+}
+
+.signupPage .loginDisplay .sign .terms-c .checkbox,
+.signupPage .signupDisplay .sign .terms-c .checkbox,
+.logInPage .loginDisplay .sign .terms-c .checkbox,
+.logInPage .signupDisplay .sign .terms-c .checkbox {
+  margin: 10px;
+}
+
+.signupPage .loginDisplay .sign .signInbtn,
+.signupPage .loginDisplay .sign .signUpbtn,
+.signupPage .signupDisplay .sign .signInbtn,
+.signupPage .signupDisplay .sign .signUpbtn,
+.logInPage .loginDisplay .sign .signInbtn,
+.logInPage .loginDisplay .sign .signUpbtn,
+.logInPage .signupDisplay .sign .signInbtn,
+.logInPage .signupDisplay .sign .signUpbtn {
+  width: 100%;
+  font-size: 18px;
+  background-color: skyblue;
+  border: transparent;
+}
+
+.signupPage .loginDisplay .signImage,
+.signupPage .signupDisplay .signImage,
+.logInPage .loginDisplay .signImage,
+.logInPage .signupDisplay .signImage {
+  position: relative;
+}
+
+.signupPage .loginDisplay .signImage .signImage,
+.signupPage .signupDisplay .signImage .signImage,
+.logInPage .loginDisplay .signImage .signImage,
+.logInPage .signupDisplay .signImage .signImage {
+  -webkit-filter: brightness(70%);
+          filter: brightness(70%);
+}
+
+.signupPage .loginDisplay .signImage .signImage-text,
+.signupPage .signupDisplay .signImage .signImage-text,
+.logInPage .loginDisplay .signImage .signImage-text,
+.logInPage .signupDisplay .signImage .signImage-text {
+  padding: 0 100px 0 0;
+  font-size: 60px;
+  font-family: "Questrial", sans-serif;
+  position: absolute;
+  top: 80%;
+  left: 10%;
+  color: white;
+}
+
+.dashboard {
+  display: none;
+}
+
+.dashboard .dashboard-display {
+  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.dashboard .dashboard-display .dashboard-nav {
+  width: 30%;
+  padding: 0 40px;
+  -webkit-box-flex: 30%;
+      -ms-flex: 30%;
+          flex: 30%;
+}
+
+.dashboard .dashboard-display .dashboard-nav h3 {
+  color: grey;
+  font-weight: 100;
+}
+
+.dashboard .dashboard-display .dashboard-nav button {
+  background-color: transparent;
+  border: transparent;
+}
+
+.dashboard .dashboard-display .dashboard-nav .dashboard-signout {
+  color: grey;
+  font-size: 18px;
+}
+
+.dashboard .dashboard-display .dashboard-nav .dashboardNav-item {
+  padding: 20px 0 0;
+  border-bottom: 0.1px solid grey;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.dashboard .dashboard-display .dashboard-nav .dashboard-Header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 15% 0 25%;
+}
+
+.dashboard .dashboard-display .dashboard-nav .dashboard-Header .signHeader-logo {
+  width: 8rem;
+}
+
+.dashboard .dashboard-display .dashboard-nav .dashboard-Header .userImage {
+  width: 40px;
+  border-radius: 50%;
+}
+
+.dashboard .dashboard-display .dashboard-resourcecontainer {
+  margin: 0 0 0 40px;
+  width: 70%;
+  -webkit-box-flex: 70%;
+      -ms-flex: 70%;
+          flex: 70%;
+  position: relative;
+}
+
+.dashboard .dashboard-display .dashboard-resourcecontainer .dashboardLaptop {
+  -webkit-filter: brightness(80%);
+          filter: brightness(80%);
+  width: 100%;
+}
+
+.dashboard .dashboard-display .dashboard-resourcecontainer .dashboardoverlaytext {
+  font-size: 40px;
+  font-family: "Questrial", sans-serif;
+  position: absolute;
+  top: 10%;
+  left: 65%;
+  color: white;
+}
+
+.dashboard .dashboard-display .dashboard-resourcecontainer .dashboardoverlaytext span {
+  font-weight: 100;
+}
+
+.dashboard .dashboard-display .dashboard-resourcecontainer .recentResource, .dashboard .dashboard-display .dashboard-resourcecontainer .recentCourses, .dashboard .dashboard-display .dashboard-resourcecontainer .communityTrend, .dashboard .dashboard-display .dashboard-resourcecontainer .events {
+  margin: 0;
+  width: 100%;
+}
+
+.dashboard .dashboard-display .dashboard-resourcecontainer .recentResource h3, .dashboard .dashboard-display .dashboard-resourcecontainer .recentCourses h3, .dashboard .dashboard-display .dashboard-resourcecontainer .communityTrend h3, .dashboard .dashboard-display .dashboard-resourcecontainer .events h3 {
+  margin: 50px 0 20px 100px;
+}
+
+.dashboard .dashboard-display .dashboard-resourcecontainer .recentResource .resourceCard, .dashboard .dashboard-display .dashboard-resourcecontainer .recentResource .courseCard, .dashboard .dashboard-display .dashboard-resourcecontainer .recentResource .communityTrendCard, .dashboard .dashboard-display .dashboard-resourcecontainer .recentResource .eventCard, .dashboard .dashboard-display .dashboard-resourcecontainer .recentCourses .resourceCard, .dashboard .dashboard-display .dashboard-resourcecontainer .recentCourses .courseCard, .dashboard .dashboard-display .dashboard-resourcecontainer .recentCourses .communityTrendCard, .dashboard .dashboard-display .dashboard-resourcecontainer .recentCourses .eventCard, .dashboard .dashboard-display .dashboard-resourcecontainer .communityTrend .resourceCard, .dashboard .dashboard-display .dashboard-resourcecontainer .communityTrend .courseCard, .dashboard .dashboard-display .dashboard-resourcecontainer .communityTrend .communityTrendCard, .dashboard .dashboard-display .dashboard-resourcecontainer .communityTrend .eventCard, .dashboard .dashboard-display .dashboard-resourcecontainer .events .resourceCard, .dashboard .dashboard-display .dashboard-resourcecontainer .events .courseCard, .dashboard .dashboard-display .dashboard-resourcecontainer .events .communityTrendCard, .dashboard .dashboard-display .dashboard-resourcecontainer .events .eventCard {
+  position: relative;
+  width: 500px;
+}
+
+.dashboard .dashboard-display .dashboard-resourcecontainer .recentResource .resourceCard p, .dashboard .dashboard-display .dashboard-resourcecontainer .recentResource .courseCard p, .dashboard .dashboard-display .dashboard-resourcecontainer .recentResource .communityTrendCard p, .dashboard .dashboard-display .dashboard-resourcecontainer .recentResource .eventCard p, .dashboard .dashboard-display .dashboard-resourcecontainer .recentCourses .resourceCard p, .dashboard .dashboard-display .dashboard-resourcecontainer .recentCourses .courseCard p, .dashboard .dashboard-display .dashboard-resourcecontainer .recentCourses .communityTrendCard p, .dashboard .dashboard-display .dashboard-resourcecontainer .recentCourses .eventCard p, .dashboard .dashboard-display .dashboard-resourcecontainer .communityTrend .resourceCard p, .dashboard .dashboard-display .dashboard-resourcecontainer .communityTrend .courseCard p, .dashboard .dashboard-display .dashboard-resourcecontainer .communityTrend .communityTrendCard p, .dashboard .dashboard-display .dashboard-resourcecontainer .communityTrend .eventCard p, .dashboard .dashboard-display .dashboard-resourcecontainer .events .resourceCard p, .dashboard .dashboard-display .dashboard-resourcecontainer .events .courseCard p, .dashboard .dashboard-display .dashboard-resourcecontainer .events .communityTrendCard p, .dashboard .dashboard-display .dashboard-resourcecontainer .events .eventCard p {
+  padding: 0 270px 0 0;
+}
+
+.dashboard .dashboard-display .dashboard-resourcecontainer .recentResource .resourceCard .resourceImage, .dashboard .dashboard-display .dashboard-resourcecontainer .recentResource .resourceCard .courseImage, .dashboard .dashboard-display .dashboard-resourcecontainer .recentResource .resourceCard .communityTrendImage, .dashboard .dashboard-display .dashboard-resourcecontainer .recentResource .resourceCard .eventImage, .dashboard .dashboard-display .dashboard-resourcecontainer .recentResource .courseCard .resourceImage, .dashboard .dashboard-display .dashboard-resourcecontainer .recentResource .courseCard .courseImage, .dashboard .dashboard-display .dashboard-resourcecontainer .recentResource .courseCard .communityTrendImage, .dashboard .dashboard-display .dashboard-resourcecontainer .recentResource .courseCard .eventImage, .dashboard .dashboard-display .dashboard-resourcecontainer .recentResource .communityTrendCard .resourceImage, .dashboard .dashboard-display .dashboard-resourcecontainer .recentResource .communityTrendCard .courseImage, .dashboard .dashboard-display .dashboard-resourcecontainer .recentResource .communityTrendCard .communityTrendImage, .dashboard .dashboard-display .dashboard-resourcecontainer .recentResource .communityTrendCard .eventImage, .dashboard .dashboard-display .dashboard-resourcecontainer .recentResource .eventCard .resourceImage, .dashboard .dashboard-display .dashboard-resourcecontainer .recentResource .eventCard .courseImage, .dashboard .dashboard-display .dashboard-resourcecontainer .recentResource .eventCard .communityTrendImage, .dashboard .dashboard-display .dashboard-resourcecontainer .recentResource .eventCard .eventImage, .dashboard .dashboard-display .dashboard-resourcecontainer .recentCourses .resourceCard .resourceImage, .dashboard .dashboard-display .dashboard-resourcecontainer .recentCourses .resourceCard .courseImage, .dashboard .dashboard-display .dashboard-resourcecontainer .recentCourses .resourceCard .communityTrendImage, .dashboard .dashboard-display .dashboard-resourcecontainer .recentCourses .resourceCard .eventImage, .dashboard .dashboard-display .dashboard-resourcecontainer .recentCourses .courseCard .resourceImage, .dashboard .dashboard-display .dashboard-resourcecontainer .recentCourses .courseCard .courseImage, .dashboard .dashboard-display .dashboard-resourcecontainer .recentCourses .courseCard .communityTrendImage, .dashboard .dashboard-display .dashboard-resourcecontainer .recentCourses .courseCard .eventImage, .dashboard .dashboard-display .dashboard-resourcecontainer .recentCourses .communityTrendCard .resourceImage, .dashboard .dashboard-display .dashboard-resourcecontainer .recentCourses .communityTrendCard .courseImage, .dashboard .dashboard-display .dashboard-resourcecontainer .recentCourses .communityTrendCard .communityTrendImage, .dashboard .dashboard-display .dashboard-resourcecontainer .recentCourses .communityTrendCard .eventImage, .dashboard .dashboard-display .dashboard-resourcecontainer .recentCourses .eventCard .resourceImage, .dashboard .dashboard-display .dashboard-resourcecontainer .recentCourses .eventCard .courseImage, .dashboard .dashboard-display .dashboard-resourcecontainer .recentCourses .eventCard .communityTrendImage, .dashboard .dashboard-display .dashboard-resourcecontainer .recentCourses .eventCard .eventImage, .dashboard .dashboard-display .dashboard-resourcecontainer .communityTrend .resourceCard .resourceImage, .dashboard .dashboard-display .dashboard-resourcecontainer .communityTrend .resourceCard .courseImage, .dashboard .dashboard-display .dashboard-resourcecontainer .communityTrend .resourceCard .communityTrendImage, .dashboard .dashboard-display .dashboard-resourcecontainer .communityTrend .resourceCard .eventImage, .dashboard .dashboard-display .dashboard-resourcecontainer .communityTrend .courseCard .resourceImage, .dashboard .dashboard-display .dashboard-resourcecontainer .communityTrend .courseCard .courseImage, .dashboard .dashboard-display .dashboard-resourcecontainer .communityTrend .courseCard .communityTrendImage, .dashboard .dashboard-display .dashboard-resourcecontainer .communityTrend .courseCard .eventImage, .dashboard .dashboard-display .dashboard-resourcecontainer .communityTrend .communityTrendCard .resourceImage, .dashboard .dashboard-display .dashboard-resourcecontainer .communityTrend .communityTrendCard .courseImage, .dashboard .dashboard-display .dashboard-resourcecontainer .communityTrend .communityTrendCard .communityTrendImage, .dashboard .dashboard-display .dashboard-resourcecontainer .communityTrend .communityTrendCard .eventImage, .dashboard .dashboard-display .dashboard-resourcecontainer .communityTrend .eventCard .resourceImage, .dashboard .dashboard-display .dashboard-resourcecontainer .communityTrend .eventCard .courseImage, .dashboard .dashboard-display .dashboard-resourcecontainer .communityTrend .eventCard .communityTrendImage, .dashboard .dashboard-display .dashboard-resourcecontainer .communityTrend .eventCard .eventImage, .dashboard .dashboard-display .dashboard-resourcecontainer .events .resourceCard .resourceImage, .dashboard .dashboard-display .dashboard-resourcecontainer .events .resourceCard .courseImage, .dashboard .dashboard-display .dashboard-resourcecontainer .events .resourceCard .communityTrendImage, .dashboard .dashboard-display .dashboard-resourcecontainer .events .resourceCard .eventImage, .dashboard .dashboard-display .dashboard-resourcecontainer .events .courseCard .resourceImage, .dashboard .dashboard-display .dashboard-resourcecontainer .events .courseCard .courseImage, .dashboard .dashboard-display .dashboard-resourcecontainer .events .courseCard .communityTrendImage, .dashboard .dashboard-display .dashboard-resourcecontainer .events .courseCard .eventImage, .dashboard .dashboard-display .dashboard-resourcecontainer .events .communityTrendCard .resourceImage, .dashboard .dashboard-display .dashboard-resourcecontainer .events .communityTrendCard .courseImage, .dashboard .dashboard-display .dashboard-resourcecontainer .events .communityTrendCard .communityTrendImage, .dashboard .dashboard-display .dashboard-resourcecontainer .events .communityTrendCard .eventImage, .dashboard .dashboard-display .dashboard-resourcecontainer .events .eventCard .resourceImage, .dashboard .dashboard-display .dashboard-resourcecontainer .events .eventCard .courseImage, .dashboard .dashboard-display .dashboard-resourcecontainer .events .eventCard .communityTrendImage, .dashboard .dashboard-display .dashboard-resourcecontainer .events .eventCard .eventImage {
+  margin-bottom: 20px;
+  width: 200px;
+}
+
+.dashboard .dashboard-display .dashboard-resourcecontainer .recentResource .resourceCard .course-attendees, .dashboard .dashboard-display .dashboard-resourcecontainer .recentResource .courseCard .course-attendees, .dashboard .dashboard-display .dashboard-resourcecontainer .recentResource .communityTrendCard .course-attendees, .dashboard .dashboard-display .dashboard-resourcecontainer .recentResource .eventCard .course-attendees, .dashboard .dashboard-display .dashboard-resourcecontainer .recentCourses .resourceCard .course-attendees, .dashboard .dashboard-display .dashboard-resourcecontainer .recentCourses .courseCard .course-attendees, .dashboard .dashboard-display .dashboard-resourcecontainer .recentCourses .communityTrendCard .course-attendees, .dashboard .dashboard-display .dashboard-resourcecontainer .recentCourses .eventCard .course-attendees, .dashboard .dashboard-display .dashboard-resourcecontainer .communityTrend .resourceCard .course-attendees, .dashboard .dashboard-display .dashboard-resourcecontainer .communityTrend .courseCard .course-attendees, .dashboard .dashboard-display .dashboard-resourcecontainer .communityTrend .communityTrendCard .course-attendees, .dashboard .dashboard-display .dashboard-resourcecontainer .communityTrend .eventCard .course-attendees, .dashboard .dashboard-display .dashboard-resourcecontainer .events .resourceCard .course-attendees, .dashboard .dashboard-display .dashboard-resourcecontainer .events .courseCard .course-attendees, .dashboard .dashboard-display .dashboard-resourcecontainer .events .communityTrendCard .course-attendees, .dashboard .dashboard-display .dashboard-resourcecontainer .events .eventCard .course-attendees {
+  position: absolute;
+  top: 48%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (40px)[5];
+      grid-template-columns: repeat(5, 40px);
+}
+
+.dashboard .dashboard-display .dashboard-resourcecontainer .recentResource .resourceCard .course-attendees .attendeeImage, .dashboard .dashboard-display .dashboard-resourcecontainer .recentResource .courseCard .course-attendees .attendeeImage, .dashboard .dashboard-display .dashboard-resourcecontainer .recentResource .communityTrendCard .course-attendees .attendeeImage, .dashboard .dashboard-display .dashboard-resourcecontainer .recentResource .eventCard .course-attendees .attendeeImage, .dashboard .dashboard-display .dashboard-resourcecontainer .recentCourses .resourceCard .course-attendees .attendeeImage, .dashboard .dashboard-display .dashboard-resourcecontainer .recentCourses .courseCard .course-attendees .attendeeImage, .dashboard .dashboard-display .dashboard-resourcecontainer .recentCourses .communityTrendCard .course-attendees .attendeeImage, .dashboard .dashboard-display .dashboard-resourcecontainer .recentCourses .eventCard .course-attendees .attendeeImage, .dashboard .dashboard-display .dashboard-resourcecontainer .communityTrend .resourceCard .course-attendees .attendeeImage, .dashboard .dashboard-display .dashboard-resourcecontainer .communityTrend .courseCard .course-attendees .attendeeImage, .dashboard .dashboard-display .dashboard-resourcecontainer .communityTrend .communityTrendCard .course-attendees .attendeeImage, .dashboard .dashboard-display .dashboard-resourcecontainer .communityTrend .eventCard .course-attendees .attendeeImage, .dashboard .dashboard-display .dashboard-resourcecontainer .events .resourceCard .course-attendees .attendeeImage, .dashboard .dashboard-display .dashboard-resourcecontainer .events .courseCard .course-attendees .attendeeImage, .dashboard .dashboard-display .dashboard-resourcecontainer .events .communityTrendCard .course-attendees .attendeeImage, .dashboard .dashboard-display .dashboard-resourcecontainer .events .eventCard .course-attendees .attendeeImage {
+  width: 40px;
+  border-radius: 50%;
+}
+
+.dashboard .dashboard-display .dashboard-resourcecontainer .recentResource .resourceCard .course-attendees .attendee1, .dashboard .dashboard-display .dashboard-resourcecontainer .recentResource .courseCard .course-attendees .attendee1, .dashboard .dashboard-display .dashboard-resourcecontainer .recentResource .communityTrendCard .course-attendees .attendee1, .dashboard .dashboard-display .dashboard-resourcecontainer .recentResource .eventCard .course-attendees .attendee1, .dashboard .dashboard-display .dashboard-resourcecontainer .recentCourses .resourceCard .course-attendees .attendee1, .dashboard .dashboard-display .dashboard-resourcecontainer .recentCourses .courseCard .course-attendees .attendee1, .dashboard .dashboard-display .dashboard-resourcecontainer .recentCourses .communityTrendCard .course-attendees .attendee1, .dashboard .dashboard-display .dashboard-resourcecontainer .recentCourses .eventCard .course-attendees .attendee1, .dashboard .dashboard-display .dashboard-resourcecontainer .communityTrend .resourceCard .course-attendees .attendee1, .dashboard .dashboard-display .dashboard-resourcecontainer .communityTrend .courseCard .course-attendees .attendee1, .dashboard .dashboard-display .dashboard-resourcecontainer .communityTrend .communityTrendCard .course-attendees .attendee1, .dashboard .dashboard-display .dashboard-resourcecontainer .communityTrend .eventCard .course-attendees .attendee1, .dashboard .dashboard-display .dashboard-resourcecontainer .events .resourceCard .course-attendees .attendee1, .dashboard .dashboard-display .dashboard-resourcecontainer .events .courseCard .course-attendees .attendee1, .dashboard .dashboard-display .dashboard-resourcecontainer .events .communityTrendCard .course-attendees .attendee1, .dashboard .dashboard-display .dashboard-resourcecontainer .events .eventCard .course-attendees .attendee1 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+}
+
+.dashboard .dashboard-display .dashboard-resourcecontainer .recentResource .resourceCard .course-attendees .attendee2, .dashboard .dashboard-display .dashboard-resourcecontainer .recentResource .courseCard .course-attendees .attendee2, .dashboard .dashboard-display .dashboard-resourcecontainer .recentResource .communityTrendCard .course-attendees .attendee2, .dashboard .dashboard-display .dashboard-resourcecontainer .recentResource .eventCard .course-attendees .attendee2, .dashboard .dashboard-display .dashboard-resourcecontainer .recentCourses .resourceCard .course-attendees .attendee2, .dashboard .dashboard-display .dashboard-resourcecontainer .recentCourses .courseCard .course-attendees .attendee2, .dashboard .dashboard-display .dashboard-resourcecontainer .recentCourses .communityTrendCard .course-attendees .attendee2, .dashboard .dashboard-display .dashboard-resourcecontainer .recentCourses .eventCard .course-attendees .attendee2, .dashboard .dashboard-display .dashboard-resourcecontainer .communityTrend .resourceCard .course-attendees .attendee2, .dashboard .dashboard-display .dashboard-resourcecontainer .communityTrend .courseCard .course-attendees .attendee2, .dashboard .dashboard-display .dashboard-resourcecontainer .communityTrend .communityTrendCard .course-attendees .attendee2, .dashboard .dashboard-display .dashboard-resourcecontainer .communityTrend .eventCard .course-attendees .attendee2, .dashboard .dashboard-display .dashboard-resourcecontainer .events .resourceCard .course-attendees .attendee2, .dashboard .dashboard-display .dashboard-resourcecontainer .events .courseCard .course-attendees .attendee2, .dashboard .dashboard-display .dashboard-resourcecontainer .events .communityTrendCard .course-attendees .attendee2, .dashboard .dashboard-display .dashboard-resourcecontainer .events .eventCard .course-attendees .attendee2 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+}
+
+.dashboard .dashboard-display .dashboard-resourcecontainer .recentResource .resourceCard .course-attendees .attendee3, .dashboard .dashboard-display .dashboard-resourcecontainer .recentResource .courseCard .course-attendees .attendee3, .dashboard .dashboard-display .dashboard-resourcecontainer .recentResource .communityTrendCard .course-attendees .attendee3, .dashboard .dashboard-display .dashboard-resourcecontainer .recentResource .eventCard .course-attendees .attendee3, .dashboard .dashboard-display .dashboard-resourcecontainer .recentCourses .resourceCard .course-attendees .attendee3, .dashboard .dashboard-display .dashboard-resourcecontainer .recentCourses .courseCard .course-attendees .attendee3, .dashboard .dashboard-display .dashboard-resourcecontainer .recentCourses .communityTrendCard .course-attendees .attendee3, .dashboard .dashboard-display .dashboard-resourcecontainer .recentCourses .eventCard .course-attendees .attendee3, .dashboard .dashboard-display .dashboard-resourcecontainer .communityTrend .resourceCard .course-attendees .attendee3, .dashboard .dashboard-display .dashboard-resourcecontainer .communityTrend .courseCard .course-attendees .attendee3, .dashboard .dashboard-display .dashboard-resourcecontainer .communityTrend .communityTrendCard .course-attendees .attendee3, .dashboard .dashboard-display .dashboard-resourcecontainer .communityTrend .eventCard .course-attendees .attendee3, .dashboard .dashboard-display .dashboard-resourcecontainer .events .resourceCard .course-attendees .attendee3, .dashboard .dashboard-display .dashboard-resourcecontainer .events .courseCard .course-attendees .attendee3, .dashboard .dashboard-display .dashboard-resourcecontainer .events .communityTrendCard .course-attendees .attendee3, .dashboard .dashboard-display .dashboard-resourcecontainer .events .eventCard .course-attendees .attendee3 {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+}
+
+.dashboard .dashboard-display .dashboard-resourcecontainer .recentResource .resourceCard .course-attendees .attendee4, .dashboard .dashboard-display .dashboard-resourcecontainer .recentResource .courseCard .course-attendees .attendee4, .dashboard .dashboard-display .dashboard-resourcecontainer .recentResource .communityTrendCard .course-attendees .attendee4, .dashboard .dashboard-display .dashboard-resourcecontainer .recentResource .eventCard .course-attendees .attendee4, .dashboard .dashboard-display .dashboard-resourcecontainer .recentCourses .resourceCard .course-attendees .attendee4, .dashboard .dashboard-display .dashboard-resourcecontainer .recentCourses .courseCard .course-attendees .attendee4, .dashboard .dashboard-display .dashboard-resourcecontainer .recentCourses .communityTrendCard .course-attendees .attendee4, .dashboard .dashboard-display .dashboard-resourcecontainer .recentCourses .eventCard .course-attendees .attendee4, .dashboard .dashboard-display .dashboard-resourcecontainer .communityTrend .resourceCard .course-attendees .attendee4, .dashboard .dashboard-display .dashboard-resourcecontainer .communityTrend .courseCard .course-attendees .attendee4, .dashboard .dashboard-display .dashboard-resourcecontainer .communityTrend .communityTrendCard .course-attendees .attendee4, .dashboard .dashboard-display .dashboard-resourcecontainer .communityTrend .eventCard .course-attendees .attendee4, .dashboard .dashboard-display .dashboard-resourcecontainer .events .resourceCard .course-attendees .attendee4, .dashboard .dashboard-display .dashboard-resourcecontainer .events .courseCard .course-attendees .attendee4, .dashboard .dashboard-display .dashboard-resourcecontainer .events .communityTrendCard .course-attendees .attendee4, .dashboard .dashboard-display .dashboard-resourcecontainer .events .eventCard .course-attendees .attendee4 {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-column: 4/5;
+  width: 40px;
+  height: 30px;
+  background-color: skyblue;
+  border-radius: 50%;
+  color: white;
+}
+
+.dashboard .dashboard-display .dashboard-resourcecontainer .recentResource .resourceCard .hr, .dashboard .dashboard-display .dashboard-resourcecontainer .recentResource .courseCard .hr, .dashboard .dashboard-display .dashboard-resourcecontainer .recentResource .communityTrendCard .hr, .dashboard .dashboard-display .dashboard-resourcecontainer .recentResource .eventCard .hr, .dashboard .dashboard-display .dashboard-resourcecontainer .recentCourses .resourceCard .hr, .dashboard .dashboard-display .dashboard-resourcecontainer .recentCourses .courseCard .hr, .dashboard .dashboard-display .dashboard-resourcecontainer .recentCourses .communityTrendCard .hr, .dashboard .dashboard-display .dashboard-resourcecontainer .recentCourses .eventCard .hr, .dashboard .dashboard-display .dashboard-resourcecontainer .communityTrend .resourceCard .hr, .dashboard .dashboard-display .dashboard-resourcecontainer .communityTrend .courseCard .hr, .dashboard .dashboard-display .dashboard-resourcecontainer .communityTrend .communityTrendCard .hr, .dashboard .dashboard-display .dashboard-resourcecontainer .communityTrend .eventCard .hr, .dashboard .dashboard-display .dashboard-resourcecontainer .events .resourceCard .hr, .dashboard .dashboard-display .dashboard-resourcecontainer .events .courseCard .hr, .dashboard .dashboard-display .dashboard-resourcecontainer .events .communityTrendCard .hr, .dashboard .dashboard-display .dashboard-resourcecontainer .events .eventCard .hr {
+  border-bottom: 6px solid grey;
+  margin: 20px 0;
+}
+
+.dashboard .dashboard-display .dashboard-resourcecontainer .recentResource .resourceCard .vidNum-container, .dashboard .dashboard-display .dashboard-resourcecontainer .recentResource .courseCard .vidNum-container, .dashboard .dashboard-display .dashboard-resourcecontainer .recentResource .communityTrendCard .vidNum-container, .dashboard .dashboard-display .dashboard-resourcecontainer .recentResource .eventCard .vidNum-container, .dashboard .dashboard-display .dashboard-resourcecontainer .recentCourses .resourceCard .vidNum-container, .dashboard .dashboard-display .dashboard-resourcecontainer .recentCourses .courseCard .vidNum-container, .dashboard .dashboard-display .dashboard-resourcecontainer .recentCourses .communityTrendCard .vidNum-container, .dashboard .dashboard-display .dashboard-resourcecontainer .recentCourses .eventCard .vidNum-container, .dashboard .dashboard-display .dashboard-resourcecontainer .communityTrend .resourceCard .vidNum-container, .dashboard .dashboard-display .dashboard-resourcecontainer .communityTrend .courseCard .vidNum-container, .dashboard .dashboard-display .dashboard-resourcecontainer .communityTrend .communityTrendCard .vidNum-container, .dashboard .dashboard-display .dashboard-resourcecontainer .communityTrend .eventCard .vidNum-container, .dashboard .dashboard-display .dashboard-resourcecontainer .events .resourceCard .vidNum-container, .dashboard .dashboard-display .dashboard-resourcecontainer .events .courseCard .vidNum-container, .dashboard .dashboard-display .dashboard-resourcecontainer .events .communityTrendCard .vidNum-container, .dashboard .dashboard-display .dashboard-resourcecontainer .events .eventCard .vidNum-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.dashboard .dashboard-display .dashboard-resourcecontainer .recentResource .resourceCard .vidNum-container button, .dashboard .dashboard-display .dashboard-resourcecontainer .recentResource .courseCard .vidNum-container button, .dashboard .dashboard-display .dashboard-resourcecontainer .recentResource .communityTrendCard .vidNum-container button, .dashboard .dashboard-display .dashboard-resourcecontainer .recentResource .eventCard .vidNum-container button, .dashboard .dashboard-display .dashboard-resourcecontainer .recentCourses .resourceCard .vidNum-container button, .dashboard .dashboard-display .dashboard-resourcecontainer .recentCourses .courseCard .vidNum-container button, .dashboard .dashboard-display .dashboard-resourcecontainer .recentCourses .communityTrendCard .vidNum-container button, .dashboard .dashboard-display .dashboard-resourcecontainer .recentCourses .eventCard .vidNum-container button, .dashboard .dashboard-display .dashboard-resourcecontainer .communityTrend .resourceCard .vidNum-container button, .dashboard .dashboard-display .dashboard-resourcecontainer .communityTrend .courseCard .vidNum-container button, .dashboard .dashboard-display .dashboard-resourcecontainer .communityTrend .communityTrendCard .vidNum-container button, .dashboard .dashboard-display .dashboard-resourcecontainer .communityTrend .eventCard .vidNum-container button, .dashboard .dashboard-display .dashboard-resourcecontainer .events .resourceCard .vidNum-container button, .dashboard .dashboard-display .dashboard-resourcecontainer .events .courseCard .vidNum-container button, .dashboard .dashboard-display .dashboard-resourcecontainer .events .communityTrendCard .vidNum-container button, .dashboard .dashboard-display .dashboard-resourcecontainer .events .eventCard .vidNum-container button {
+  color: skyblue;
+  background-color: transparent;
+  border: transparent;
+}
+
+.dashboard .dashboard-display .dashboard-resourcecontainer .recentResource .resourceCard .vidNum-container .videoNum, .dashboard .dashboard-display .dashboard-resourcecontainer .recentResource .courseCard .vidNum-container .videoNum, .dashboard .dashboard-display .dashboard-resourcecontainer .recentResource .communityTrendCard .vidNum-container .videoNum, .dashboard .dashboard-display .dashboard-resourcecontainer .recentResource .eventCard .vidNum-container .videoNum, .dashboard .dashboard-display .dashboard-resourcecontainer .recentCourses .resourceCard .vidNum-container .videoNum, .dashboard .dashboard-display .dashboard-resourcecontainer .recentCourses .courseCard .vidNum-container .videoNum, .dashboard .dashboard-display .dashboard-resourcecontainer .recentCourses .communityTrendCard .vidNum-container .videoNum, .dashboard .dashboard-display .dashboard-resourcecontainer .recentCourses .eventCard .vidNum-container .videoNum, .dashboard .dashboard-display .dashboard-resourcecontainer .communityTrend .resourceCard .vidNum-container .videoNum, .dashboard .dashboard-display .dashboard-resourcecontainer .communityTrend .courseCard .vidNum-container .videoNum, .dashboard .dashboard-display .dashboard-resourcecontainer .communityTrend .communityTrendCard .vidNum-container .videoNum, .dashboard .dashboard-display .dashboard-resourcecontainer .communityTrend .eventCard .vidNum-container .videoNum, .dashboard .dashboard-display .dashboard-resourcecontainer .events .resourceCard .vidNum-container .videoNum, .dashboard .dashboard-display .dashboard-resourcecontainer .events .courseCard .vidNum-container .videoNum, .dashboard .dashboard-display .dashboard-resourcecontainer .events .communityTrendCard .vidNum-container .videoNum, .dashboard .dashboard-display .dashboard-resourcecontainer .events .eventCard .vidNum-container .videoNum {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.dashboard .dashboard-display .dashboard-resourcecontainer .recentResource .resourceCard .vidNum-container .videoNum .videoImage, .dashboard .dashboard-display .dashboard-resourcecontainer .recentResource .courseCard .vidNum-container .videoNum .videoImage, .dashboard .dashboard-display .dashboard-resourcecontainer .recentResource .communityTrendCard .vidNum-container .videoNum .videoImage, .dashboard .dashboard-display .dashboard-resourcecontainer .recentResource .eventCard .vidNum-container .videoNum .videoImage, .dashboard .dashboard-display .dashboard-resourcecontainer .recentCourses .resourceCard .vidNum-container .videoNum .videoImage, .dashboard .dashboard-display .dashboard-resourcecontainer .recentCourses .courseCard .vidNum-container .videoNum .videoImage, .dashboard .dashboard-display .dashboard-resourcecontainer .recentCourses .communityTrendCard .vidNum-container .videoNum .videoImage, .dashboard .dashboard-display .dashboard-resourcecontainer .recentCourses .eventCard .vidNum-container .videoNum .videoImage, .dashboard .dashboard-display .dashboard-resourcecontainer .communityTrend .resourceCard .vidNum-container .videoNum .videoImage, .dashboard .dashboard-display .dashboard-resourcecontainer .communityTrend .courseCard .vidNum-container .videoNum .videoImage, .dashboard .dashboard-display .dashboard-resourcecontainer .communityTrend .communityTrendCard .vidNum-container .videoNum .videoImage, .dashboard .dashboard-display .dashboard-resourcecontainer .communityTrend .eventCard .vidNum-container .videoNum .videoImage, .dashboard .dashboard-display .dashboard-resourcecontainer .events .resourceCard .vidNum-container .videoNum .videoImage, .dashboard .dashboard-display .dashboard-resourcecontainer .events .courseCard .vidNum-container .videoNum .videoImage, .dashboard .dashboard-display .dashboard-resourcecontainer .events .communityTrendCard .vidNum-container .videoNum .videoImage, .dashboard .dashboard-display .dashboard-resourcecontainer .events .eventCard .vidNum-container .videoNum .videoImage {
+  margin: 0 12px 0 8px;
+}
+
+.dashboard .dashboard-display .dashboard-resourcecontainer .recentResource .carousel .carousel-track, .dashboard .dashboard-display .dashboard-resourcecontainer .recentCourses .carousel .carousel-track, .dashboard .dashboard-display .dashboard-resourcecontainer .communityTrend .carousel .carousel-track, .dashboard .dashboard-display .dashboard-resourcecontainer .events .carousel .carousel-track {
+  -ms-grid-columns: (200px)[8];
+      grid-template-columns: repeat(8, 200px);
+}
+
+.dashboard .dashboard-display .dashboard-resourcecontainer .recentCourses .carousel-track {
+  -ms-grid-columns: (500px)[8];
+      grid-template-columns: repeat(8, 500px);
+  grid-column-gap: 15%;
+}
+
+.dashboard .dashboard-display .dashboard-resourcecontainer .recentCourses .carousel-track .courseCard {
+  width: 300px;
+}
+
+.dashboard .dashboard-display .dashboard-resourcecontainer .recentCourses .carousel-track .courseCard H5 {
+  margin-bottom: 100px;
+}
+
+.dashboard .dashboard-display .dashboard-resourcecontainer .recentCourses .carousel-track .courseCard p {
+  padding: 20px 0 0 0;
+  font-weight: 700;
+}
+
+.dashboard .dashboard-display .dashboard-resourcecontainer .recentCourses .carousel-track .courseCard .courseImage {
+  width: 320px;
+}
+
+.dashboard .dashboard-display .dashboard-resourcecontainer .communityTrend .carousel-track, .dashboard .dashboard-display .dashboard-resourcecontainer .events .carousel-track {
+  -ms-grid-columns: (500px)[8];
+      grid-template-columns: repeat(8, 500px);
+  grid-column-gap: 15%;
+}
+
+.dashboard .dashboard-display .dashboard-resourcecontainer .communityTrend .carousel-track .communityTrendCard, .dashboard .dashboard-display .dashboard-resourcecontainer .communityTrend .carousel-track .eventCard, .dashboard .dashboard-display .dashboard-resourcecontainer .events .carousel-track .communityTrendCard, .dashboard .dashboard-display .dashboard-resourcecontainer .events .carousel-track .eventCard {
+  width: 300px;
+}
+
+.dashboard .dashboard-display .dashboard-resourcecontainer .communityTrend .carousel-track .communityTrendCard h5, .dashboard .dashboard-display .dashboard-resourcecontainer .communityTrend .carousel-track .eventCard h5, .dashboard .dashboard-display .dashboard-resourcecontainer .events .carousel-track .communityTrendCard h5, .dashboard .dashboard-display .dashboard-resourcecontainer .events .carousel-track .eventCard h5 {
+  margin: 0;
+}
+
+.dashboard .dashboard-display .dashboard-resourcecontainer .communityTrend .carousel-track .communityTrendCard p, .dashboard .dashboard-display .dashboard-resourcecontainer .communityTrend .carousel-track .eventCard p, .dashboard .dashboard-display .dashboard-resourcecontainer .events .carousel-track .communityTrendCard p, .dashboard .dashboard-display .dashboard-resourcecontainer .events .carousel-track .eventCard p {
+  padding: 10px 0 20px;
+}
+
+.dashboard .dashboard-display .dashboard-resourcecontainer .communityTrend .carousel-track .communityTrendCard .communityTrendImage, .dashboard .dashboard-display .dashboard-resourcecontainer .communityTrend .carousel-track .communityTrendCard .eventImage, .dashboard .dashboard-display .dashboard-resourcecontainer .communityTrend .carousel-track .eventCard .communityTrendImage, .dashboard .dashboard-display .dashboard-resourcecontainer .communityTrend .carousel-track .eventCard .eventImage, .dashboard .dashboard-display .dashboard-resourcecontainer .events .carousel-track .communityTrendCard .communityTrendImage, .dashboard .dashboard-display .dashboard-resourcecontainer .events .carousel-track .communityTrendCard .eventImage, .dashboard .dashboard-display .dashboard-resourcecontainer .events .carousel-track .eventCard .communityTrendImage, .dashboard .dashboard-display .dashboard-resourcecontainer .events .carousel-track .eventCard .eventImage {
+  width: 300px;
+}

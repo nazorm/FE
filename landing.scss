@@ -1,0 +1,653 @@
+$secondary-color: grey;
+$primary-color: whitesmoke;
+$text-color: teal;
+$light-color: white;
+$header-color: black;
+$font-stack: "Questrial", sans-serif;
+$font-size: 13px;
+$btn-color: skyblue;
+$yellow-color: #e1ad01;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  button:hover,
+  a:hover {
+    cursor: pointer;
+    opacity: 0.5;
+  }
+}
+button {
+  background-color: $text-color;
+  color: $light-color;
+  font-family: $font-stack;
+  font-size: $font-size;
+  padding: 10px 15px;
+  text-align: center;
+}
+.uptoCard,
+.communityCard,
+.resourceCard {
+  text-align: start;
+  h5 {
+    margin-top: 20px;
+  }
+  p {
+    margin: 20px 0 30px;
+    padding: 0 40px 0 0;
+    font-family: $font-stack;
+    line-height: 1.5;
+  }
+}
+.carousel-track {
+  display: grid;
+  border: 1px solid $header-color;
+  grid-gap: 47px;
+  width: 100%;
+  margin: 0 100px;
+}
+.carousel {
+  margin-top: 30px;
+  text-align: start;
+  width: 100%;
+  scroll-snap-type: x mandatory;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  &::-webkit-scrollbar {
+    background: transparent;
+  }
+  &-identifier {
+    width: 100%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+
+    div {
+      margin-right: 2px;
+      width: 10px;
+      height: 10px;
+      border: 1px solid $text-color;
+      border-radius: 50%;
+      &:first-child {
+        background-color: $text-color;
+      }
+    }
+  }
+}
+.landing-header {
+  .blackHead {
+    background-color: $header-color;
+    padding: 10px 100px;
+    display: flex;
+    float: right;
+    width: 100%;
+    align-items: center;
+    flex-direction: row-reverse;
+    nav {
+      .language {
+        background-color: $header-color;
+        border: $header-color;
+        color: $light-color;
+        font-family: $font-stack;
+      }
+    }
+    .blackheadSearch {
+      background-color: $header-color;
+      font-family: $font-stack;
+      border: transparent;
+      color: $light-color;
+      padding: 0;
+      width: 4%;
+      height: 20px;
+      margin: 0 0 0 20px;
+    }
+    .memberLogin {
+      width: 150px;
+      border: 10px solid $light-color;
+      background-color: $header-color;
+      border: $light-color;
+      display: flex;
+      align-self: center;
+      flex-direction: row-reverse;
+      h5 {
+        font-family: $font-stack;
+        padding: 0px;
+        font-size: $font-size;
+        font-weight: 200;
+        color: $light-color;
+        margin: 0 10px 0 0;
+      }
+    }
+  }
+  .landing-headerLogoArea {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: $primary-color;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+    padding: 0 100px;
+    .landing-headerLogo {
+      width: 12rem;
+    }
+    button {
+      background: transparent;
+      border: transparent;
+      padding: 0;
+    }
+    .hamburger {
+      width: 2rem;
+    }
+  }
+  .language:hover {
+    cursor: pointer;
+    opacity: 0.5;
+  }
+}
+.introSection {
+  .suitWoman {
+    width: 100%;
+    filter: brightness(90%);
+  }
+  .divOverlay {
+    position: absolute;
+    background-color: $light-color;
+    top: 75%;
+    display: flex;
+    margin: 0 50px;
+    border-radius: 5px;
+    justify-content: space-between;
+  }
+  &-card {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    img {
+      width: 100px;
+    }
+    .learn {
+      flex: 25%;
+    }
+    p {
+      margin: 30px 0 0;
+      padding: 0 150px 0 0;
+    }
+  }
+}
+.beenUpTo {
+  text-align: center;
+  h3 {
+    margin: 80px 0 50px;
+  }
+  .carousel-track {
+    grid-template-columns: repeat(8, 290px);
+  }
+}
+.newsletter-subscriptionSection {
+  position: relative;
+
+  .coffeeWoman {
+    filter: brightness(80%);
+    width: 100%;
+  }
+  .newsletterOverlay {
+    padding: 0 100px 0 0;
+    h3 {
+      padding: 0 80px 0 0;
+      font-family: $font-stack;
+      font-size: 40px;
+      color: $light-color;
+    }
+    text-align: start;
+    position: absolute;
+    top: 30%;
+    left: 55%;
+    div {
+      display: flex;
+      margin-top: 60px;
+      .newsletterEmail {
+        font-family: $font-stack;
+        font-size: $font-size;
+        color: $light-color;
+        width: 100%;
+        align-self: flex-end;
+        margin-right: 30px;
+        padding: 10px 0;
+        border: transparent;
+        background-color: transparent;
+        border-bottom: 5px solid $light-color;
+      }
+    }
+  }
+}
+.communitySection {
+  text-align: center;
+  padding: 0 80px 0 100px;
+  h3 {
+    margin: 50px 0;
+  }
+  .communities {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+.whereWeWork {
+  .carousel-track {
+    grid-template-columns: repeat(9, 300px);
+    align-items: center;
+    img {
+      border: 1px solid $header-color;
+      width: 30%;
+    }
+
+    .horizontal {
+      width: 100%;
+    }
+    .deloitte {
+      width: 60%;
+    }
+  }
+}
+
+.landingFooter {
+  background-color: $header-color;
+  .about {
+    a {
+      color: $light-color;
+      text-decoration: none;
+      font-family: $font-stack;
+    }
+
+    p {
+      color: $light-color;
+      margin: 50px 0 20px;
+    }
+    li {
+      list-style: none;
+      line-height: 2;
+    }
+  }
+  .contact,
+  .about {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px;
+  }
+  .icons {
+    align-self: center;
+    .icon {
+      margin: 0 10px;
+    }
+  }
+}
+.dropdown,
+.signupPage,
+.logInPage {
+  display: none;
+  .dropdown-display,
+  .loginDisplay,
+  .signupDisplay{
+    padding-bottom: 19%;
+    display: block;
+    display: flex;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    background-color: $light-color;
+    width: 100%;
+  }
+}
+.dropdown {
+  .dropdown-display {
+    .dropdrown-nav {
+      font-family: $font-stack;
+      flex: 25%;
+      padding: 0 50px;
+      .dropdown-item {
+        padding: 20px 0 0;
+        border-bottom: 0.1px solid $secondary-color;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+      }
+      h3 {
+        color: $secondary-color;
+        font-weight: 100;
+      }
+
+      .clear-btn {
+        float: right;
+        margin: 0 0 40px 0;
+      }
+      button {
+        background: transparent;
+        border: transparent;
+        display: flex;
+        align-items: center;
+        margin-top: 15px;
+        h5 {
+          color: $secondary-color;
+          font-size: 15px;
+        }
+        .identityIcon-yellow {
+          margin-right: 20px;
+        }
+      }
+    }
+    .dropdowncard-container {
+      flex: 75%;
+      display: flex;
+      padding: 0 100px;
+      align-items: center;
+    }
+  }
+}
+.signupPage,
+.logInPage {
+  .loginDisplay,
+  .signupDisplay {
+    padding-bottom: 0;
+    .sign {
+      flex: 20%;
+      padding: 20px 60px 0;
+      .signHeader {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 25%;
+        &-logo {
+          width: 8rem;
+        }
+        &-language {
+          font-size: 15px;
+        }
+      }
+      .sign-identifier {
+        display: flex;
+        margin-bottom: 3%;
+      }
+      p {
+        line-height: 1.5;
+        font-family: $font-stack;
+        font-size: 12px;
+        color: $secondary-color;
+        margin-bottom: 5%;
+      }
+      .signEmailContainer {
+        display: flex;
+        flex-direction: column;
+        input {
+          padding: 10px;
+          border: 1px solid $primary-color;
+        }
+        .signupPassword,
+        .signinPassword {
+          margin: 10px 0;
+        }
+        .forgotpassword {
+          text-align: end;
+        }
+      }
+      h4 {
+        text-align: center;
+        align-self: center;
+        margin: 30px 0;
+        display: flex;
+        flex-direction: row;
+      }
+      h4:before,
+      h4:after {
+        content: "";
+        flex: 1 1;
+        border-bottom: 0.1px solid $secondary-color;
+        margin: auto;
+      }
+
+      .sign-icons {
+        text-align: center;
+        margin-bottom: 30px;
+        .icon {
+          padding: 0 5px;
+        }
+      }
+
+      .terms-c {
+        display: flex;
+        a {
+          text-decoration: none;
+          color: #e1ad01;
+        }
+
+        .checkbox {
+          margin: 10px;
+        }
+      }
+
+      .signInbtn,
+      .signUpbtn {
+        width: 100%;
+        font-size: 18px;
+        background-color: $btn-color;
+        border: transparent;
+      }
+    }
+    .signImage {
+      position: relative;
+      .signImage {
+        filter: brightness(70%);
+      }
+      .signImage-text {
+        padding: 0 100px 0 0;
+        font-size: 60px;
+        font-family: $font-stack;
+        position: absolute;
+        top: 80%;
+        left: 10%;
+        color: $light-color;
+      }
+    }
+  }
+}
+
+.dashboard {
+    display: none;
+  .dashboard-display {
+      display: block;
+    display: flex;
+    width: 100%;
+    .dashboard-nav {
+      width: 30%;
+      padding: 0 40px;
+      flex: 30%;
+      
+      h3 {
+        color: $secondary-color;
+        font-weight: 100;
+      }
+      button{
+          background-color: transparent ;
+          border: transparent;
+      }
+      .dashboard-signout {
+        color: $secondary-color;
+        font-size: 18px;
+      }
+      .dashboardNav-item {
+        padding: 20px 0 0;
+        border-bottom: 0.1px solid $secondary-color;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+      }
+      .dashboard-Header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 15% 0 25%;
+        .signHeader-logo{
+            width: 8rem;
+        }
+        .userImage {
+          width: 40px;
+          border-radius: 50%;
+        }
+      }
+    }
+    .dashboard-resourcecontainer {
+     margin: 0 0 0 40px ;
+      width: 70%;
+      flex: 70%;
+      position: relative;
+
+      .dashboardLaptop {
+        filter: brightness(80%);
+        width: 100%;
+      }
+      .dashboardoverlaytext {
+        font-size: 40px;
+        font-family: $font-stack;
+        position: absolute;
+        top: 10%;
+        left: 65%;
+        color: $light-color;
+        span {
+          font-weight: 100;
+        }
+      }
+      .recentResource, .recentCourses, .communityTrend, .events{
+          margin: 0;
+         
+        width: 100%;
+        h3 {
+          margin: 50px 0 20px 100px;
+        }
+        .resourceCard, .courseCard, .communityTrendCard, .eventCard{
+            position: relative;
+          width: 500px;
+          p {
+            padding: 0 270px 0 0;
+          }
+          .resourceImage, .courseImage, .communityTrendImage, .eventImage{
+              margin-bottom: 20px;
+            width: 200px;
+          }
+          .course-attendees{
+              position: absolute;
+              top: 48%;
+              display: grid;
+              grid-template-columns: repeat(5, 40px);
+              .attendeeImage{
+                  width: 40px;
+                 border-radius: 50%;
+              }
+              .attendee1{
+                grid-column:1/2;
+              }
+              .attendee2{
+                grid-column:2/3;
+              }
+              .attendee3{
+                grid-column:3/4;
+              }
+              .attendee4{
+                grid-column:4/5;
+                width: 40px;
+                height: 30px;
+                background-color: $btn-color;
+                border-radius: 50%;
+                color: $light-color;
+              }
+          }
+          .hr{
+              border-bottom: 6px solid $secondary-color;
+              margin: 20px 0;
+          }
+          .vidNum-container{
+              button{
+                  color: $btn-color;
+                  background-color: transparent;
+                  border:transparent;
+              }
+              display: flex;
+              justify-content: space-between;
+              .videoNum{
+                  display: flex;
+                  align-items: center;
+                  .videoImage{
+                      margin: 0 12px 0 8px;
+                  }
+              }
+          }
+        }
+        .carousel {
+          .carousel-track {
+            grid-template-columns: repeat(8, 200px);
+
+          }
+        }
+      }
+    }
+  }
+}
+
+.dashboard{
+   .dashboard-display{
+    .dashboard-resourcecontainer{
+        .recentCourses{
+            
+                .carousel-track {
+                    grid-template-columns: repeat(8, 500px);
+                    grid-column-gap: 15%;
+                    .courseCard{
+                        H5{
+                            margin-bottom: 100px;
+                        }
+                        p{
+                            padding: 20px 0 0 0;
+                            font-weight: 700;
+                        }
+                        width: 300px;
+                        .courseImage{
+                            width: 320px;
+                        }
+                  }
+            }
+        }
+    }
+   }
+}
+.dashboard{
+    .dashboard-display{
+     .dashboard-resourcecontainer{
+         .communityTrend, .events{
+             
+                 .carousel-track {
+                     grid-template-columns: repeat(8, 500px);
+                     grid-column-gap: 15%;
+                     .communityTrendCard, .eventCard{
+                         h5{
+                             margin: 0;
+                         }
+                         p{
+                             padding:  10px 0 20px;
+                             
+                         }
+                         width: 300px;
+                         .communityTrendImage, .eventImage{
+                             width: 300px;
+                         }
+                   }
+             }
+         }
+     }
+    }
+ }
