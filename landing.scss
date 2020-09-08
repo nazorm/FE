@@ -457,11 +457,12 @@ button {
   }
 }
 
-.dashboard {
+.dashboard, .resource-section, .event-section{
     display: none;
-  .dashboard-display {
+  .dashboard-display, .resource-display, .event-display{
       display: block;
     display: flex;
+    z-index: 2;
     width: 100%;
     .dashboard-nav {
       width: 30%;
@@ -502,13 +503,13 @@ button {
         }
       }
     }
-    .dashboard-resourcecontainer {
+    .dashboard-resourcecontainer, .resource-container, .event-container {
      margin: 0 0 0 40px ;
       width: 70%;
       flex: 70%;
       position: relative;
 
-      .dashboardLaptop {
+      .dashboardLaptop, .resourceMainImage, .eventMainImage{
         filter: brightness(80%);
         width: 100%;
       }
@@ -651,3 +652,102 @@ button {
      }
     }
  }
+.resource-section, .event-section{
+.resource-display, .event-display{
+   .resource-container, .event-container{
+     width: 70%;
+     flex: 70%;
+     .dashboardoverlaytext{
+       top: 8%;
+     }
+    
+      .resourceFilter{
+        .resourceNav{
+          margin: 50px 0;
+          width: 50%;
+          display: flex;
+          justify-content: space-between;
+          a{
+            color: $secondary-color;
+            text-decoration: none;
+            font-size: 20px;
+            font-family: $font-stack;
+          }
+          a:hover{
+            cursor: pointer;
+            color: $yellow-color;
+            text-decoration: underline;
+          }
+        }
+        .filterByEmail{
+          width: 100%;
+          .enterEmail{
+            width: 80%;
+            padding: 10px ;
+            margin-right: 20px;
+          }
+        }
+        .filterCheckbox{
+          color: $secondary-color;
+            font-family: $font-stack;
+          width: 50%;
+          display: flex;
+          justify-content: space-between;
+          margin: 50px 0 0;
+          span{
+            display: flex;
+            align-items: center;
+            
+            input{
+              margin-right: 10px;
+            }
+            
+          }
+        }
+      }
+     .resourcePageSetOne, .resourcePageSetTwo, .resourcePageSetThree, .resourcePageSetFour{
+       padding: 0 10px;
+       margin: 50px 0  0;
+       display: flex;
+      justify-content: space-evenly;
+       .resourceCard{
+         width: 80%;
+         P{
+           padding: 0;
+           margin: 0;
+         }
+         .resourceImage{
+          width: 90%;
+        }
+       }
+
+     }
+   } 
+   
+}
+}
+.event-section{
+  .event-display{
+    .event-container{
+      .dashboardoverlaytext{
+        top: 15%;
+      }
+      .carousel{
+        .carousel-track{
+          .resourceCard{
+            width: 100%;
+            p{
+              padding: 0;
+            }
+            .resourceImage{
+              width: 240px;
+            }
+          }
+          display: grid;
+          grid-template-columns: repeat(8,210px);
+         
+        }
+      }
+    }
+  }
+}
