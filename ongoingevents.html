@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Finance Pro Network</title>
+    <link rel="stylesheet" href="./landing.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Questrial&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="ongoingevents">
+        <div class="event-display-ongoing">
+          <section class="dashboard-nav">
+            <div class="dashboard-Header">
+              <img src="./i/fpn-Logo.svg" class="signHeader-logo" />
+              <img src="./upto/coffe-woman.png" class="userImage" />
+            </div>
+            <div class="dashboardNav-item">
+                <h3>Dashboard</h3>
+                <a href="#"><img src="./i/arrow-icon.svg" class="dashboard-Arrowbtn" /></a>
+              </div>
+              <div class="dashboardNav-item">
+                <h3>Academy</h3>
+                <a href="#"><img src="./i/arrow-icon.svg" class="dashboard-Arrowbtn" /></a>
+              </div>
+              <div class="dashboardNav-item">
+                <h3>Courses</h3>
+                <a href="#"><img src="./i/arrow-icon.svg" class="dashboard-Arrowbtn" /></a>
+              </div>
+              <div class="dashboardNav-item">
+                <h3>Resources</h3>
+               <a href="./resources.html"><img src="./i/arrow-icon.svg "  class="dashboard-Arrowbtn" /></a>
+              </div>
+              <div class="dashboardNav-item">
+                <h3>Insights</h3>
+                <a href="#"><img src="./i/arrow-icon.svg" class="dashboard-Arrowbtn" /></a>
+              </div>
+              <div class="dashboardNav-item">
+                <h3>Community</h3>
+                <a href="#"><img src="./i/arrow-icon.svg" class="dashboard-Arrowbtn" /></a>
+              </div>
+  
+              <div class="dashboardNav-item">
+                <h3>Forum</h3>
+                <a href="#"><img src="./i/arrow-icon.svg" class="dashboard-Arrowbtn" /></a>
+              </div>
+  
+              <div class="dashboardNav-item">
+                <h3>Events</h3>
+                <a href="./upcomingevents.html"><img src="./i/arrow-icon.svg" class="dashboard-Arrowbtn" /></a>
+              </div>
+            <button onclick="logout()"  class="dashboard-signout"> Sign Out </button>
+         </section> 
+          <section class="event-container">
+                  <img src="./events/event-main-image.png" class="eventMainImage"/>
+    
+                  <!-- <div class="resourceFilter">
+                    <nav class="resourceNav">
+                        <a href="./upcomingevents.html">Upcoming</a>
+                        <a href="./ongoingevents.html">Ongoing</a>
+                        <a href="./pastevents.html">Past Events</a>
+                    </nav>
+                       <div class="filterByEmail">
+                           <input type="text" placeholder="Enter search term here" class="enterEmail">
+                            <button onclick="filterResource()">Search</button>
+                       </div>
+              
+                      <div class="filterCheckbox">
+                       <h3 >Filter by:</h3>
+                      <span><input type="checkbox">
+                        <h3>Title</h3>
+                      </span>
+    
+                      <span><input type="checkbox">
+                        <h3>Author</h3>
+                      </span>
+    
+                      <span><input type="checkbox">
+                        <h3>Size</h3>
+                      </span>
+    
+                      <span><input type="checkbox">
+                        <h3>Company</h3>
+                      </span>
+                    </div>
+    
+                  </div> -->
+    
+                
+              <div class="eventInfo">
+                <h1>FPN Series: Becoming a Woman of great Influence </h1>
+                <div class="ongoingEventInfoCard">
+                  <div class="info">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                      Aut obcaecati exercitationem omnis voluptates dolor quibusdam ullam! Quaerat, vel eos!
+                       Error hic sequi deleniti, nulla voluptatum autem cupiditate rerum saepe commodi?
+                       quis ut amet fuga sed odio commodi qui maiores nobis suscipit eos!<br><br>
+                       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam repellendus 
+                       atque iure perferendis asperiores nobis quaerat consectetur earum.
+                    </p>
+                    <div class="ongoingEventTime">
+                      <h3>Date</h3>
+                      <h5>15th of August, 2020</h5>
+                    </div>
+                  </div>
+                  
+                  <div class="ongoingEventInfoCardImageCard">
+                    <img src="./upto/ongoing-events-ivy.png" class="ongoingEventInfoCardImage">
+                    <h3>Ivy Ikpeme-Mbakwe</h3>
+                    <h5>CEO, Africa Prudential PLC</h5>
+                  </div>
+                </div>
+
+                <form action="">
+                  <div class="inputDetails">
+                      <label for="name">Name</label><br>
+                      <input type="text" class="ongoingEventRegFname" placeholder="First Name"> 
+                      <input type="text" class="ongoingEventRegLname" placeholder="Last Name"><br>
+                    <label for="email">Email</label><br>
+                    <input type="email" class="ongoingEventRegEmail" placeholder="user@example.com"><br>
+                    <label for="company">Company</label><br>
+                    <input type="text" class="ongoingEventRegCompany" placeholder="PWC, KPMG, BAML, GS, GT, etc.">
+                  </div>
+                  
+                   
+                  <div class="activechannel">
+                    <p>How did you hear about the webinar?</p>
+                    <input type="checkbox" class="activeChannel1">
+                    <label for="whatsapp">Whatsapp</label><br>
+                    <input type="checkbox" class="activeChannel2">
+                    <label for="socialmedia">Social Media</label><br>
+                    <input type="checkbox" class="activeChannel3">
+                    <label for="afriend">A Friend</label><br>
+                    <input type="checkbox" class="activeChannel4">
+                    <label for="others">Others</label><br>
+                   </div>
+
+                   <div class="webinarQuestion">
+                     <p>Please let us know if you have any questions for our speaker ahead of the webinar</p>
+                      <textarea name="" class="userQuestion" cols="82" rows="5" placeholder="Share your questions with us :)"></textarea>
+                    </div>
+                 
+                  <input type="submit" value="Register" class="ongoingRegBtn">
+
+
+
+
+
+                </form>
+
+
+
+
+
+              </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          </section>
+     </section>
+    
+
+    <script src="./main.js"></script>
+  </body>
+</html>

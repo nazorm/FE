@@ -103,9 +103,8 @@ button {
     }
     .memberLogin {
       width: 150px;
-      border: 10px solid $light-color;
+      margin: 0 10px 0 0;
       background-color: $header-color;
-      border: $light-color;
       display: flex;
       align-self: center;
       flex-direction: row-reverse;
@@ -115,7 +114,7 @@ button {
         font-size: $font-size;
         font-weight: 200;
         color: $light-color;
-        margin: 0 10px 0 0;
+        margin-right: 3px;
       }
     }
   }
@@ -287,10 +286,12 @@ button {
     }
   }
 }
+.dropdown{
+  display: none;
+}
 .dropdown,
 .signupPage,
 .logInPage {
-  display: none;
   .dropdown-display,
   .loginDisplay,
   .signupDisplay{
@@ -309,7 +310,7 @@ button {
     .dropdrown-nav {
       font-family: $font-stack;
       flex: 25%;
-      padding: 0 50px;
+      padding: 0 5px 0 30px;
       .dropdown-item {
         padding: 20px 0 0;
         border-bottom: 0.1px solid $secondary-color;
@@ -322,24 +323,30 @@ button {
         color: $secondary-color;
         font-weight: 100;
       }
+      button{
+        background-color: transparent;
+        border: transparent;
+      }
 
       .clear-btn {
         float: right;
-        margin: 0 0 40px 0;
+        margin: 80px 0 20px 0;
       }
-      button {
-        background: transparent;
-        border: transparent;
+      .memberLogin{
+        width: 180px;
+        margin: 30px 0 0;
+        padding: 10px;
         display: flex;
-        align-items: center;
-        margin-top: 15px;
+        align-self: center;
+        text-decoration: none;
         h5 {
-          color: $secondary-color;
-          font-size: 15px;
+          font-family: $font-stack;
+          font-size: 16px;
+          font-weight: 200;
+          color: $header-color;
+          margin-left:10px ;
         }
-        .identityIcon-yellow {
-          margin-right: 20px;
-        }
+       
       }
     }
     .dropdowncard-container {
@@ -350,6 +357,7 @@ button {
     }
   }
 }
+
 .signupPage,
 .logInPage {
   .loginDisplay,
@@ -373,6 +381,12 @@ button {
       .sign-identifier {
         display: flex;
         margin-bottom: 3%;
+        align-items: center;
+      }
+      a{
+        text-decoration: none;
+        margin: 0 5px;
+        align-self: center;
       }
       p {
         line-height: 1.5;
@@ -386,7 +400,7 @@ button {
         flex-direction: column;
         input {
           padding: 10px;
-          border: 1px solid $primary-color;
+          border: 2px solid $primary-color;
         }
         .signupPassword,
         .signinPassword {
@@ -406,8 +420,8 @@ button {
       h4:before,
       h4:after {
         content: "";
-        flex: 1 1;
-        border-bottom: 0.1px solid $secondary-color;
+        flex: 1;
+        border-bottom: 2px solid $primary-color;
         margin: auto;
       }
 
@@ -431,12 +445,17 @@ button {
         }
       }
 
-      .signInbtn,
-      .signUpbtn {
+      .signbtn{
         width: 100%;
-        font-size: 18px;
+        display: block;
+        border: 1px solid black;
+        text-align: center;
+        padding: 10px;
+        font-size: 20px;
+        color: $light-color;
+        margin: 0 auto;
         background-color: $btn-color;
-        border: transparent;
+        
       }
     }
     .signImage {
@@ -457,9 +476,9 @@ button {
   }
 }
 
-.dashboard, .resource-section, .event-section{
-    display: none;
-  .dashboard-display, .resource-display, .event-display{
+.dashboard, .resource-section, .pastevents, .upcomingevents, .ongoingevents{
+    
+  .dashboard-display, .resource-display, .event-display, .event-display-ongoing{
       display: block;
     display: flex;
     z-index: 2;
@@ -479,10 +498,12 @@ button {
       }
       .dashboard-signout {
         color: $secondary-color;
+        margin: 50px 0 0;
+        padding: 0;
         font-size: 18px;
       }
       .dashboardNav-item {
-        padding: 20px 0 0;
+        padding: 30px 0 0;
         border-bottom: 0.1px solid $secondary-color;
         display: flex;
         align-items: center;
@@ -652,8 +673,8 @@ button {
      }
     }
  }
-.resource-section, .event-section{
-.resource-display, .event-display{
+.resource-section, .pastevents, .upcomingevents, .ongoingevents{
+.resource-display, .event-display, .event-display-ongoing{
    .resource-container, .event-container{
      width: 70%;
      flex: 70%;
@@ -662,29 +683,36 @@ button {
      }
     
       .resourceFilter{
+        padding: 0 0 0 100px;
+        
         .resourceNav{
           margin: 50px 0;
+          padding: 0;
           width: 50%;
           display: flex;
           justify-content: space-between;
-          a{
+          button, a{
+            padding: 0;
             color: $secondary-color;
-            text-decoration: none;
+            border: transparent;
+            background-color: transparent;
             font-size: 20px;
             font-family: $font-stack;
+            text-decoration: none;
           }
-          a:hover{
+          button:hover, a:hover{
             cursor: pointer;
             color: $yellow-color;
             text-decoration: underline;
           }
+
         }
         .filterByEmail{
           width: 100%;
           .enterEmail{
             width: 80%;
             padding: 10px ;
-            margin-right: 20px;
+            
           }
         }
         .filterCheckbox{
@@ -706,7 +734,7 @@ button {
         }
       }
      .resourcePageSetOne, .resourcePageSetTwo, .resourcePageSetThree, .resourcePageSetFour{
-       padding: 0 10px;
+       padding: 0 100px;
        margin: 50px 0  0;
        display: flex;
       justify-content: space-evenly;
@@ -726,8 +754,8 @@ button {
    
 }
 }
-.event-section{
-  .event-display{
+.pastevents, .upcomingevents, .ongoingevents{
+  .event-display, .event-display-ongoing{
     .event-container{
       .dashboardoverlaytext{
         top: 15%;
@@ -746,6 +774,125 @@ button {
           display: grid;
           grid-template-columns: repeat(8,210px);
          
+        }
+      }
+    }
+  }
+}
+.ongoingevents{
+  .event-display-ongoing{
+    .event-container{
+      width: 70%;
+     
+      .eventInfo{
+         width: 100%;
+         padding: 0 80px;
+         margin: 50px 0 0 ;
+         h1{
+          margin-bottom: 50px;
+          font-size: 29px;
+          width: 650px;
+          line-height: 1.5;
+          font-family: $font-stack;
+          }
+         
+        .ongoingEventInfoCard{
+          display: flex;
+          justify-content: space-between;
+          .info{
+           flex: 70%;
+            p{
+              padding: 0 20px 0 0;
+              color: $secondary-color;
+              line-height: 1.5;
+            }
+            .ongoingEventTime{
+              margin-top: 20px;
+              h5{
+                margin-top: 5px;
+                font-size: 15px;
+              }
+            }
+          }
+           
+          .ongoingEventInfoCardImageCard{
+            flex: 30%;
+            text-align: end;
+            align-self: flex-start;
+            .ongoingEventInfoCardImage{
+              width: 170px;
+            }
+            h3{
+             padding: 0;
+             font-size: 18px;
+             width: 200px;
+             margin: 10px 0 5px;
+             width: 100%;
+           
+            }
+            h5{
+             color: $secondary-color;
+             font-size: 13px;
+             width: 100%;
+            
+            }
+          }
+        }
+        form{
+          margin: 50px 0 0 0;
+          border-top: 2px solid $primary-color;
+          .inputDetails{
+            margin-top: 50px;
+            width: 80%;
+            label{
+              font-weight: 700;
+            }
+            .ongoingEventRegFname, .ongoingEventRegLname{
+              width: 48%;
+            }
+            .ongoingEventRegFname{
+              margin-right: 20px;
+            }
+            input{
+              width: 100%;
+              margin: 10px 0 40px;
+              padding: 10px;
+              border: 2px solid $primary-color;
+            }
+          }
+         
+          .activechannel{
+            margin: 40px 0 0;
+            line-height: 1.8;
+            width: 80%;
+            input{
+              margin: 0 0 0 20px;
+            }
+           
+            p{
+              font-weight: 700;
+              margin: 0 0 20px 0
+            }
+           
+          }
+          .webinarQuestion{
+            margin: 40px 0 0;
+            p{
+              font-weight: 700;
+              margin: 0 0 20px 0
+            }
+            textarea{
+              padding: 10px;
+            }
+            
+          }
+          .ongoingRegBtn{
+            padding: 10px 30px;
+            margin: 40px 0 50px 0;
+            border: transparent;
+            color: $light-color;
+            background-color: $btn-color;
+          }
         }
       }
     }

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Finance Pro Network</title>
+    <link rel="stylesheet" href="./landing.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Questrial&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="resource-section">
+        <div class="resource-display">
+          <section class="dashboard-nav">
+            <div class="dashboard-Header">
+              <img src="./i/fpn-Logo.svg" class="signHeader-logo" />
+              <img src="./upto/coffe-woman.png" class="userImage" />
+            </div>
+            <div class="dashboardNav-item">
+                <h3>Dashboard</h3>
+                <a href="#"><img src="./i/arrow-icon.svg" class="dashboard-Arrowbtn" /></a>
+              </div>
+              <div class="dashboardNav-item">
+                <h3>Academy</h3>
+                <a href="#"><img src="./i/arrow-icon.svg" class="dashboard-Arrowbtn" /></a>
+              </div>
+              <div class="dashboardNav-item">
+                <h3>Courses</h3>
+                <a href="./resources.html"><img src="./i/arrow-icon.svg" class="dashboard-Arrowbtn" /></a>
+              </div>
+              <div class="dashboardNav-item">
+                <h3>Resources</h3>
+               <a href="./resources.html"><img src="./i/arrow-icon.svg "  class="dashboard-Arrowbtn" /></a>
+              </div>
+              <div class="dashboardNav-item">
+                <h3>Insights</h3>
+                <a href="#"><img src="./i/arrow-icon.svg" class="dashboard-Arrowbtn" /></a>
+              </div>
+              <div class="dashboardNav-item">
+                <h3>Community</h3>
+                <a href="#"><img src="./i/arrow-icon.svg" class="dashboard-Arrowbtn" /></a>
+              </div>
+  
+              <div class="dashboardNav-item">
+                <h3>Forum</h3>
+                <a href="#"><img src="./i/arrow-icon.svg" class="dashboard-Arrowbtn" /></a>
+              </div>
+  
+              <div class="dashboardNav-item">
+                <h3>Events</h3>
+                <a href="./upcomingevents.html"><img src="./i/arrow-icon.svg" class="dashboard-Arrowbtn" /></a>
+              </div>
+  
+            <button onclick="logout()"  class="dashboard-signout"> Sign Out </button>
+         </section>
+           
+         
+          <section class="resource-container">
+                  <img src="./resources/resoure-main-book.png" class="resourceMainImage"/>
+                   <h4 class="dashboardoverlaytext"><span>Our,</span> <br> Resources</h4>
+  
+                  <div class="resourceFilter">
+                    <nav class="resourceNav">
+                      <a href="" class="resourceNavItem1">Books</a>
+                      <a href="" class="resourceNavItem2">Articles</a>
+                      <a href="" class="resourceNavItem3">Reports</a>
+                      <a href="" class="resourceNavItem4">Saved resources</a>
+                    </nav>
+                       <div class="filterByEmail">
+                           <input type="text" placeholder="Enter search term here" class="enterEmail">
+                            <button onclick="filterResource()">Search</button>
+                       </div>
+              
+                      <div class="filterCheckbox">
+                       <h3 >Filter by:</h3>
+                      <span><input type="checkbox">
+                        <h3>Title</h3>
+                      </span>
+  
+                      <span><input type="checkbox">
+                        <h3>Author</h3>
+                      </span>
+  
+                      <span><input type="checkbox">
+                        <h3>Size</h3>
+                      </span>
+  
+                      <span><input type="checkbox">
+                        <h3>Company</h3>
+                      </span>
+                    </div>
+  
+                  </div>
+           
+              <div class="resourcePageSetOne">
+                <div class="resourceCard">
+                  <img src="./dashboard/resource1.png" class="resourceImage" />
+                  <h5 style="color: blue">FPN Series</h5>
+                  <p>
+                    Becoming - Michelle Obama
+                  </p>
+                  <h5 class="resource-cta">VIEW</h5>
+                </div>
+                <div class="resourceCard">
+                  <img src="./dashboard/resource2.png" class="resourceImage" />
+                  <h5 style="color: blue">FPN Series</h5>
+                  <p>
+                   The Dark side of Valuation - Aswath Damodaran
+                  </p>
+                  <h5 class="resource-cta">VIEW</h5>
+                </div>
+                <div class="resourceCard">
+                  <img src="./dashboard/resource3.png" class="resourceImage" />
+                  <h5 style="color: blue">FPN Series</h5>
+                  <p>
+                    The Essential Drucker - Peter Drucker
+                  </p>
+                  <h5 class="resource-cta">VIEW</h5>
+                </div>
+                <div class="resourceCard">
+                  <img src="./dashboard/resource4.png" class="resourceImage" />
+                  <h5 style="color: blue">FPN Series</h5>
+                  <p>
+                    One up on wall street - Peter Lynch
+                  </p>
+                  <h5 class="resource-cta">VIEW</h5>
+                </div>
+                <div class="resourceCard">
+                  <img src="./dashboard/resource5.png" class="resourceImage" />
+                  <h5 style="color: blue">FPN Series</h5>
+                  <p>
+                    The Life, Lessons and Rules For Success - Warren Buffet
+                  </p>
+                  <h4 class="resource-cta">VIEW</h4>
+                </div>
+              </div>
+              <div class="resourcePageSetTwo">
+                <div class="resourceCard">
+                  <img src="./dashboard/resource1.png" class="resourceImage" />
+                  <h5 style="color: blue">FPN Series</h5>
+                  <p>
+                    Becoming - Michelle Obama
+                  </p>
+                  <h5 class="resource-cta">VIEW</h5>
+                </div>
+                <div class="resourceCard">
+                  <img src="./dashboard/resource2.png" class="resourceImage" />
+                  <h5 style="color: blue">FPN Series</h5>
+                  <p>
+                   The Dark side of Valuation - Aswath Damodaran
+                  </p>
+                  <h5 class="resource-cta">VIEW</h5>
+                </div>
+                <div class="resourceCard">
+                  <img src="./dashboard/resource3.png" class="resourceImage" />
+                  <h5 style="color: blue">FPN Series</h5>
+                  <p>
+                    The Essential Drucker - Peter Drucker
+                  </p>
+                  <h5 class="resource-cta">VIEW</h5>
+                </div>
+                <div class="resourceCard">
+                  <img src="./dashboard/resource4.png" class="resourceImage" />
+                  <h5 style="color: blue">FPN Series</h5>
+                  <p>
+                    One up on wall street - Peter Lynch
+                  </p>
+                  <h5 class="resource-cta">VIEW</h5>
+                </div>
+                <div class="resourceCard">
+                  <img src="./dashboard/resource5.png" class="resourceImage" />
+                  <h5 style="color: blue">FPN Series</h5>
+                  <p>
+                    The Life, Lessons and Rules For Success - Warren Buffet
+                  </p>
+                  <h4 class="resource-cta">VIEW</h4>
+                </div>
+              </div>
+  
+              <div class="resourcePageSetThree">
+                <div class="resourceCard">
+                  <img src="./dashboard/resource1.png" class="resourceImage" />
+                  <h5 style="color: blue">FPN Series</h5>
+                  <p>
+                    Becoming - Michelle Obama
+                  </p>
+                  <h5 class="resource-cta">VIEW</h5>
+                </div>
+                <div class="resourceCard">
+                  <img src="./dashboard/resource2.png" class="resourceImage" />
+                  <h5 style="color: blue">FPN Series</h5>
+                  <p>
+                   The Dark side of Valuation - Aswath Damodaran
+                  </p>
+                  <h5 class="resource-cta">VIEW</h5>
+                </div>
+                <div class="resourceCard">
+                  <img src="./dashboard/resource3.png" class="resourceImage" />
+                  <h5 style="color: blue">FPN Series</h5>
+                  <p>
+                    The Essential Drucker - Peter Drucker
+                  </p>
+                  <h5 class="resource-cta">VIEW</h5>
+                </div>
+                <div class="resourceCard">
+                  <img src="./dashboard/resource4.png" class="resourceImage" />
+                  <h5 style="color: blue">FPN Series</h5>
+                  <p>
+                    One up on wall street - Peter Lynch
+                  </p>
+                  <h5 class="resource-cta">VIEW</h5>
+                </div>
+                <div class="resourceCard">
+                  <img src="./dashboard/resource5.png" class="resourceImage" />
+                  <h5 style="color: blue">FPN Series</h5>
+                  <p>
+                    The Life, Lessons and Rules For Success - Warren Buffet
+                  </p>
+                  <h4 class="resource-cta">VIEW</h4>
+                </div>
+              </div>
+  
+              <div class="resourcePageSetFour">
+                <div class="resourceCard">
+                  <img src="./dashboard/resource1.png" class="resourceImage" />
+                  <h5 style="color: blue">FPN Series</h5>
+                  <p>
+                    Becoming - Michelle Obama
+                  </p>
+                  <h5 class="resource-cta">VIEW</h5>
+                </div>
+                <div class="resourceCard">
+                  <img src="./dashboard/resource2.png" class="resourceImage" />
+                  <h5 style="color: blue">FPN Series</h5>
+                  <p>
+                   The Dark side of Valuation - Aswath Damodaran
+                  </p>
+                  <h5 class="resource-cta">VIEW</h5>
+                </div>
+                <div class="resourceCard">
+                  <img src="./dashboard/resource3.png" class="resourceImage" />
+                  <h5 style="color: blue">FPN Series</h5>
+                  <p>
+                    The Essential Drucker - Peter Drucker
+                  </p>
+                  <h5 class="resource-cta">VIEW</h5>
+                </div>
+                <div class="resourceCard">
+                  <img src="./dashboard/resource4.png" class="resourceImage" />
+                  <h5 style="color: blue">FPN Series</h5>
+                  <p>
+                    One up on wall street - Peter Lynch
+                  </p>
+                  <h5 class="resource-cta">VIEW</h5>
+                </div>
+                <div class="resourceCard">
+                  <img src="./dashboard/resource5.png" class="resourceImage" />
+                  <h5 style="color: blue">FPN Series</h5>
+                  <p>
+                    The Life, Lessons and Rules For Success - Warren Buffet
+                  </p>
+                  <h4 class="resource-cta">VIEW</h4>
+                </div>
+              </div>
+         
+          </section>
+        </div>
+      </section>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
