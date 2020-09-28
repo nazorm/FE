@@ -4,9 +4,12 @@ $text-color: teal;
 $light-color: white;
 $header-color: black;
 $font-stack: "Questrial", sans-serif;
+$roboto: 'Roboto', sans-serif;
 $font-size: 13px;
 $btn-color: skyblue;
 $yellow-color: #e1ad01;
+$limegreen : #c7ea46;
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -15,6 +18,7 @@ $yellow-color: #e1ad01;
   a:hover {
     cursor: pointer;
     opacity: 0.5;
+    
   }
 }
 button {
@@ -88,18 +92,25 @@ button {
         background-color: $header-color;
         border: $header-color;
         color: $light-color;
-        font-family: $font-stack;
+        font-family: $roboto;
+       font-weight:400;
       }
     }
     .blackheadSearch {
       background-color: $header-color;
-      font-family: $font-stack;
+      font-family: $roboto;
+       font-weight:400;
       border: transparent;
       color: $light-color;
       padding: 0;
       width: 4%;
       height: 20px;
       margin: 0 0 0 20px;
+    }
+    .blackheadSearch::placeholder{
+      font-family: $roboto;
+      font-weight:400;
+      color: $light-color;
     }
     .memberLogin {
       width: 150px;
@@ -109,7 +120,8 @@ button {
       align-self: center;
       flex-direction: row-reverse;
       h5 {
-        font-family: $font-stack;
+        font-family: $roboto;
+       font-weight:400;
         padding: 0px;
         font-size: $font-size;
         font-weight: 200;
@@ -167,6 +179,10 @@ button {
     padding: 30px;
     img {
       width: 100px;
+    }
+    h5{
+      font-family: $roboto;
+      font-weight: 400;
     }
     .learn {
       flex: 25%;
@@ -260,7 +276,8 @@ button {
     a {
       color: $light-color;
       text-decoration: none;
-      font-family: $font-stack;
+      font-family: $roboto;
+      font-weight: 300;
     }
 
     p {
@@ -340,7 +357,8 @@ button {
         align-self: center;
         text-decoration: none;
         h5 {
-          font-family: $font-stack;
+          font-family: $roboto;
+       font-weight:400;
           font-size: 16px;
           font-weight: 200;
           color: $header-color;
@@ -476,9 +494,9 @@ button {
   }
 }
 
-.dashboard, .resource-section, .pastevents, .upcomingevents, .ongoingevents{
+.dashboard, .resource-section, .pastevents, .upcomingevents, .ongoingevents, .bookreview-page{
     
-  .dashboard-display, .resource-display, .event-display, .event-display-ongoing{
+  .dashboard-display, .resource-display, .event-display, .event-display-ongoing, .bookreview-page-display{
       display: block;
     display: flex;
     z-index: 2;
@@ -501,6 +519,8 @@ button {
         margin: 50px 0 0;
         padding: 0;
         font-size: 18px;
+        font-family: $roboto;
+        font-weight: 400;
       }
       .dashboardNav-item {
         padding: 30px 0 0;
@@ -509,6 +529,10 @@ button {
         align-items: center;
         justify-content: space-between;
         width: 100%;
+        h3{
+          font-family: $roboto;
+          font-weight: 400;
+        }
       }
       .dashboard-Header {
         display: flex;
@@ -529,6 +553,13 @@ button {
       width: 70%;
       flex: 70%;
       position: relative;
+      .resource-cta, .event-cta, .communityTrend-cta{
+        font-family: $roboto;
+        font-weight: 500;
+        color: $header-color;
+        text-decoration: none;
+      
+      }
 
       .dashboardLaptop, .resourceMainImage, .eventMainImage{
         filter: brightness(80%);
@@ -598,6 +629,8 @@ button {
                   color: $btn-color;
                   background-color: transparent;
                   border:transparent;
+                  font-family: $roboto;
+                  font-weight: 500;
               }
               display: flex;
               justify-content: space-between;
@@ -660,6 +693,8 @@ button {
                              margin: 0;
                          }
                          p{
+                           font-family: $roboto;
+                           font-weight: 300;
                              padding:  10px 0 20px;
                              
                          }
@@ -725,7 +760,12 @@ button {
           span{
             display: flex;
             align-items: center;
-            
+            label{
+              color: $secondary-color;
+              font-weight: 700;
+               font-family: $font-stack;
+               font-size: 18px;
+            }
             input{
               margin-right: 10px;
             }
@@ -734,15 +774,26 @@ button {
         }
       }
      .resourcePageSetOne, .resourcePageSetTwo, .resourcePageSetThree, .resourcePageSetFour{
-       padding: 0 100px;
+       padding: 0 75px;
        margin: 50px 0  0;
        display: flex;
       justify-content: space-evenly;
        .resourceCard{
-         width: 80%;
+         width: 50%;
+         a{
+           text-decoration: none;
+           color: $secondary-color;
+         }
          P{
-           padding: 0;
-           margin: 0;
+           padding: 0 30px 0 0;
+           margin: 5% 0 15% 0;
+           font-family: $roboto;
+           font-weight: 300;
+         }
+         h5{
+          font-family: $roboto;
+          font-weight: 400;
+          color: $yellow-color;
          }
          .resourceImage{
           width: 90%;
@@ -764,6 +815,10 @@ button {
         .carousel-track{
           .resourceCard{
             width: 100%;
+            a{
+              text-decoration: none;
+              color: $secondary-color;
+            }
             p{
               padding: 0;
             }
@@ -893,6 +948,205 @@ button {
             color: $light-color;
             background-color: $btn-color;
           }
+        }
+      }
+    }
+  }
+}
+.bookreview-page{
+  .bookreview-page-display{
+    .dashboard-resourcecontainer{
+      .dashboardoverlaytext{
+        top: 5%;
+      }
+      .bookInfo{
+        width: 100%;
+        display: flex;
+        margin-top: 100px;
+        .bookreviewCover{
+          flex: 30%;
+          height: 250px;
+          padding: 0 40px;
+        }
+        .bokkOwnerSection{
+            flex: 70%;
+            padding: 0 70px 0 10px;
+            h2{
+              font-size: 35px;
+            }
+            .bookinfo-ratings{
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              margin: 20px 0 20px;
+              font-family: $roboto;
+              font-weight: 400;
+            }
+            .book-download{
+              display: flex;
+              justify-content: space-between;
+              .book-download-format{
+                border: 1px solid black;
+                padding: 10px 45px;
+                text-align: center;
+                h4{
+                  font-family: $roboto;
+                  font-weight: 400;
+                }
+                a{
+                  color:$secondary-color;
+                  text-decoration: none;
+                }
+              }
+            }
+            .wishlist-btn{
+              margin: 30px 0 30px;
+              padding: 0;
+              background-color: transparent;
+              border: transparent;
+              display: flex;
+              align-items: center;
+              justify-content: flex-end;
+              width: 100%;
+              .wishlist-icon{
+                margin-right: 10px;
+              }
+              a{
+                text-decoration: none;
+              }
+            }
+            p{
+              line-height: 1.5;
+            }
+
+            .similarbooks-section{
+              margin: 40px 0 0;
+              h3{
+                margin: 0 0 20px 0;
+                font-size: 20px;
+              }
+              .similar-books{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                .similarbook-card{
+                  width:100%;
+                  .similarbook-cover{
+                    width: 90%;
+                    height: 300px;
+                    margin: 0 0 20px 0;
+                  }
+                  h4{
+                    font-size: 20px;
+                    font-family: $roboto;
+                    font-weight: 400;
+                  }
+                  h5{
+                    font-size: 18px;
+                    color: $yellow-color;
+                    margin: 10px 0 25px 0;
+                  }
+                }
+              }
+            }
+
+           .userReview-section{
+             margin-top: 100px;
+             .userReview-heading{
+               display: flex;
+               justify-content: space-between;
+               width: 100%;
+               button{
+                 background-color: transparent;
+                 border: transparent;
+                 color: $btn-color;
+               }
+             }
+             .reviewlist{
+              margin-top: 40px;
+               .review-card{
+                 display: flex;
+                 padding: 50px 0;
+                 border-bottom: 5px solid whitesmoke; 
+                 .reviewer-image{
+                   padding: 0 35px 0 0;
+                   width: 100%;
+                   flex: 10%;
+                   height: 40px;
+                 }
+                   .review{
+                    flex: 90%;
+                    .reviewer-rating{
+                      display: flex;
+                      align-items: center;
+                      h4{
+                        margin: 0;
+                      }
+                      span{
+                        color: $yellow-color;
+                      }
+                    }
+                    .reviewer-comment{
+                      margin: 20px 0 30px;
+                      color: $secondary-color;
+                    }
+                    .actionOnReview{
+                      display: flex;
+                      justify-content: space-between;
+                      .reactOnComment{
+                        width: 180px;
+                      }
+                      .reactOnComment, .numberOfReactions{
+                        display: flex;
+                        justify-content: space-between;
+                        .love-comment,.leave-comment,.likes,.comments{
+                          display: flex;
+                          align-items: center;
+                          h6{
+                            margin: 0 10px;
+                          }
+                        }
+                        .love-comment,.leave-comment{
+                          color: $secondary-color;
+                        }
+                        .likes,.comments{
+                          color: $btn-color;
+                          h5{
+                              margin: 0 0 0 3px;
+                          }
+                          h6{
+                            margin: 0 3px 0;
+                          }
+                        }
+                        
+                        .likes{
+                          border-right: 3px solid $secondary-color;
+                          margin: 0 3px 0 0;
+                        }
+                      }
+                    }
+                   }
+               }
+             }
+           }
+
+             .pageSelection{
+               float: right;
+               button{
+                margin-top: 50px;
+                background-color: transparent;
+                border:  2px solid $primary-color;
+                color: $header-color;
+               }
+               
+              
+
+
+             }
+
+
+
+
         }
       }
     }

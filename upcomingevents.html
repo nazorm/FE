@@ -9,6 +9,11 @@
       href="https://fonts.googleapis.com/css2?family=Questrial&display=swap"
       rel="stylesheet"
     />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" 
+    rel="stylesheet">
+
+    
+
   </head>
   <body>
     <section class="upcomingevents">
@@ -20,7 +25,7 @@
             </div>
             <div class="dashboardNav-item">
                 <h3>Dashboard</h3>
-                <a href="#"><img src="./i/arrow-icon.svg" class="dashboard-Arrowbtn" /></a>
+                <a href="./dashboard.html"><img src="./i/arrow-icon.svg" class="dashboard-Arrowbtn" /></a>
               </div>
               <div class="dashboardNav-item">
                 <h3>Academy</h3>
@@ -70,25 +75,29 @@
                            <input type="text" placeholder="Enter search term here" class="enterEmail">
                             <button onclick="filterResource()">Search</button>
                        </div>
-              
-                      <div class="filterCheckbox">
-                       <h3 >Filter by:</h3>
-                      <span><input type="checkbox">
-                        <h3>Title</h3>
-                      </span>
-  
-                      <span><input type="checkbox">
-                        <h3>Author</h3>
-                      </span>
-  
-                      <span><input type="checkbox">
-                        <h3>Size</h3>
-                      </span>
-  
-                      <span><input type="checkbox">
-                        <h3>Company</h3>
-                      </span>
-                    </div>
+                        <form action="" class="filterCheckbox">
+                          <h3 >Filter by:</h3>
+                          <span>
+                            <input type="checkbox">
+                            <label for="title">Title</label>
+                          </span>
+      
+                          <span>
+                            <input type="checkbox">
+                            <label for="author">Author</label>
+                          </span>
+      
+                          <span>
+                            <input type="checkbox">
+                            <label for="size">Size</label>
+                          </span>
+      
+                          <span>
+                            <input type="checkbox">
+                            <label for="company">Company</label>
+                          </span>
+                        </form>
+                     
   
                   </div>
     
@@ -101,7 +110,7 @@
                       <p>
                        The Dark side of Valuation - Aswath Damodaran
                       </p>
-                      <h5 class="resource-cta">VIEW</h5>
+                      <a href="#" class="resource-cta">VIEW</a>
                     </div>
                     <div class="resourceCard">
                       <img src="./dashboard/resource3.png" class="resourceImage" />
@@ -109,7 +118,7 @@
                       <p>
                         The Essential Drucker - Peter Drucker
                       </p>
-                      <h5 class="resource-cta">VIEW</h5>
+                      <a href="#" class="resource-cta">VIEW</a>
                     </div>
                     <div class="resourceCard">
                       <img src="./dashboard/resource4.png" class="resourceImage" />
@@ -117,7 +126,7 @@
                       <p>
                         One up on wall street - Peter Lynch
                       </p>
-                      <h5 class="resource-cta">VIEW</h5>
+                      <a href="#" class="resource-cta">VIEW</a>
                     </div>
                   </div>
                 </div>
